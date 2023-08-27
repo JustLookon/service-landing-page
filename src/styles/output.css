@@ -44,7 +44,7 @@ html {
   -o-tab-size: 4;
      tab-size: 4;
   /* 3 */
-  font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  font-family: Noto Sans, sans-serif;
   /* 4 */
   font-feature-settings: normal;
   /* 5 */
@@ -1416,6 +1416,10 @@ input:checked + .toggle-bg {
   overflow: hidden;
 }
 
+.text-ellipsis {
+  text-overflow: ellipsis;
+}
+
 .rounded-full {
   border-radius: 9999px;
 }
@@ -1605,6 +1609,31 @@ input:checked + .toggle-bg {
   padding-bottom: 12rem;
 }
 
+.px-8 {
+  padding-left: 2rem;
+  padding-right: 2rem;
+}
+
+.py-10 {
+  padding-top: 2.5rem;
+  padding-bottom: 2.5rem;
+}
+
+.py-20 {
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+}
+
+.py-11 {
+  padding-top: 2.75rem;
+  padding-bottom: 2.75rem;
+}
+
+.py-7 {
+  padding-top: 1.75rem;
+  padding-bottom: 1.75rem;
+}
+
 .pb-2 {
   padding-bottom: 0.5rem;
 }
@@ -1637,11 +1666,27 @@ input:checked + .toggle-bg {
   padding-top: 2.25rem;
 }
 
+.pb-3 {
+  padding-bottom: 0.75rem;
+}
+
+.pl-4 {
+  padding-left: 1rem;
+}
+
+.pl-8 {
+  padding-left: 2rem;
+}
+
 .text-center {
   text-align: center;
 }
 
 .font-noto {
+  font-family: Noto Sans, sans-serif;
+}
+
+.font-sans {
   font-family: Noto Sans, sans-serif;
 }
 
@@ -1684,6 +1729,38 @@ input:checked + .toggle-bg {
   line-height: 1.75rem;
 }
 
+.text-\[1\.6rem\] {
+  font-size: 1.6rem;
+}
+
+.text-\[\.7rem\] {
+  font-size: .7rem;
+}
+
+.text-\[0\.7rem\] {
+  font-size: 0.7rem;
+}
+
+.text-\[1rem\] {
+  font-size: 1rem;
+}
+
+.text-\[1\.2rem\] {
+  font-size: 1.2rem;
+}
+
+.text-\[33px\] {
+  font-size: 33px;
+}
+
+.text-\[13px\] {
+  font-size: 13px;
+}
+
+.text-\[19px\] {
+  font-size: 19px;
+}
+
 .font-bold {
   font-weight: 700;
 }
@@ -1716,6 +1793,14 @@ input:checked + .toggle-bg {
   line-height: 2;
 }
 
+.leading-8 {
+  line-height: 2rem;
+}
+
+.leading-10 {
+  line-height: 2.5rem;
+}
+
 .text-blue-600 {
   --tw-text-opacity: 1;
   color: rgb(28 100 242 / var(--tw-text-opacity));
@@ -1739,6 +1824,26 @@ input:checked + .toggle-bg {
 .text-white {
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
+}
+
+.text-\[\] {
+  color: ;
+}
+
+.text-\[7\] {
+  color: 7;
+}
+
+.text-\[\.7\] {
+  color: .7;
+}
+
+.text-\[0\.\] {
+  color: 0.;
+}
+
+.text-\[5\] {
+  color: 5;
 }
 
 .opacity-0 {
@@ -1800,6 +1905,22 @@ input:checked + .toggle-bg {
 
 .ease-out {
   transition-timing-function: cubic-bezier(0, 0, 0.2, 1);
+}
+
+.hover\:block:hover {
+  display: block;
+}
+
+.hover\:inline-block:hover {
+  display: inline-block;
+}
+
+.hover\:inline:hover {
+  display: inline;
+}
+
+.hover\:inline-flex:hover {
+  display: inline-flex;
 }
 
 .hover\:border-gray-300:hover {
@@ -1979,6 +2100,18 @@ input:checked + .toggle-bg {
     margin-right: 1.5rem;
   }
 
+  .md\:mb-1 {
+    margin-bottom: 0.25rem;
+  }
+
+  .md\:mb-2 {
+    margin-bottom: 0.5rem;
+  }
+
+  .md\:mb-0 {
+    margin-bottom: 0px;
+  }
+
   .md\:flex {
     display: flex;
   }
@@ -2010,4 +2143,109 @@ input:checked + .toggle-bg {
   .md\:justify-between {
     justify-content: space-between;
   }
+
+  .md\:py-48 {
+    padding-top: 12rem;
+    padding-bottom: 12rem;
+  }
+
+  .md\:px-6 {
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+  }
+
+  .md\:py-11 {
+    padding-top: 2.75rem;
+    padding-bottom: 2.75rem;
+  }
+
+  .md\:pb-7 {
+    padding-bottom: 1.75rem;
+  }
+
+  .md\:pb-5 {
+    padding-bottom: 1.25rem;
+  }
+
+  .md\:pb-9 {
+    padding-bottom: 2.25rem;
+  }
+
+  .md\:pb-1 {
+    padding-bottom: 0.25rem;
+  }
+
+  .md\:pb-20 {
+    padding-bottom: 5rem;
+  }
+
+  .md\:pb-16 {
+    padding-bottom: 4rem;
+  }
+
+  .md\:pb-12 {
+    padding-bottom: 3rem;
+  }
+
+  .md\:pb-6 {
+    padding-bottom: 1.5rem;
+  }
+
+  .md\:text-center {
+    text-align: center;
+  }
+
+  .md\:text-2xl {
+    font-size: 1.5rem;
+    line-height: 2rem;
+  }
+
+  .md\:text-5xl {
+    font-size: 3rem;
+    line-height: 1;
+  }
+
+  .md\:text-4xl {
+    font-size: 2.25rem;
+    line-height: 2.5rem;
+  }
+
+  .md\:text-3xl {
+    font-size: 1.875rem;
+    line-height: 2.25rem;
+  }
+
+  .md\:text-xl {
+    font-size: 1.25rem;
+    line-height: 1.75rem;
+  }
+
+  .md\:text-\[1\.3rem\] {
+    font-size: 1.3rem;
+  }
+
+  .md\:text-6xl {
+    font-size: 3.75rem;
+    line-height: 1;
+  }
+}
+
+.\[\&\>\*\]\:mr-2>* {
+  margin-right: 0.5rem;
+}
+
+.\[\&\>\*\]\:mr-3>* {
+  margin-right: 0.75rem;
+}
+
+.\[\&\>\*\]\:mb-3>* {
+  margin-bottom: 0.75rem;
+}
+
+.\[\&\>\*\]\:mb-2>* {
+  margin-bottom: 0.5rem;
+}
+
+.\[\&\>\*\]\:mb-5>* {
+  margin-bottom: 1.25rem;
 }
