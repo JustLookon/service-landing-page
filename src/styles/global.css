@@ -4,14 +4,16 @@
 
 @layer components {
     .app-header {
-        @apply text-center font-bold text-3xl sm:text-4xl md:text-5xl pb-3 md:pb-5 
+        @apply text-center font-bold text-3xl py-14 px-2 sm:text-4xl md:text-5xl 
     }
-    .section-margin{
-        @apply my-6 mt-20 
+    .section-mar-pad{
+        @apply my-6 mt-20 px-3
     }
-    .subheading{
+    .subHeading{
         @apply text-xl font-semibold font-noto text-center py-7 md:py-11
     }
-
+    .showBar{
+        @apply  text-white flex items-center justify-between p-3 rounded-md py-4 font-semibold max-w-lg mx-auto
+    }
 
 }
