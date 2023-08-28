@@ -1,162 +1,255 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;500;600;700&display=swap"
-      rel="stylesheet"
-    />
 
-    <title>Document</title>
-    <link href="./styles/output.css" rel="stylesheet" />
-  </head>
-  <style>
-    /* @media screen and (max-width: 680px) {
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;500;600;700&display=swap" rel="stylesheet" />
+
+  <title>Document</title>
+  <link href="./styles/output.css" rel="stylesheet" />
+</head>
+<style>
+  /* @media screen and (max-width: 680px) {
       html {
         font-size: 11px;
       }
     } */
 
-    .bg-image {
-      background-image: url("https://img.freepik.com/free-photo/abstract-luxury-gradient-blue-background-smooth-dark-blue-with-black-vignette-studio-banner_1258-56228.jpg?w=1380&t=st=1693130896~exp=1693131496~hmac=9ecdd404e3dda3cbeaf7487594e1921f1fb8717ee41907dddd6a767f3140901b");
-      height: 90vh;
-      background-repeat: no-repeat;
-      background-size: cover;
-      margin-top: 10vh;
-      background-position: center center;
-    }
+  .bg-image {
+    background-image: url("https://img.freepik.com/free-photo/abstract-luxury-gradient-blue-background-smooth-dark-blue-with-black-vignette-studio-banner_1258-56228.jpg?w=1380&t=st=1693130896~exp=1693131496~hmac=9ecdd404e3dda3cbeaf7487594e1921f1fb8717ee41907dddd6a767f3140901b");
+    height: 90vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-top: 10vh;
+    background-position: center center;
+  }
 
-    .line {
-      min-width: 15px;
-      height: 4px;
-      max-width: 800px;
-    }
+  .line {
+    min-width: 15px;
+    height: 4px;
+    max-width: 800px;
+  }
 
-    .bg-whatsapp {
-      background-color: #25d366;
-    }
-    .whatsapp :hover {
-      display: block;
-    }
-    .gradientText {
-      background: linear-gradient(to bottom left, #553c9a, #ee4b2b);
-      -webkit-background-clip: text;
-      background-clip: text;
-      color: transparent;
-      /* -webkit-text-fill-color: ; */
-    }
-  </style>
+  .bg-whatsapp {
+    background-color: #25d366;
+  }
 
-  <body>
-    <header
-      class="h-[10vh] w-full fixed top-0 text-center text-xl md:text-2xl font-bold flex justify-center items-center bg-orange-100"
-    >
-      <h2>Dr. Prateek Agarwal</h2>
-    </header>
-    <main>
-      <section class="firstSection text-white">
-        <div class="bg-image md:py-48 px-6 flex flex-col justify-center">
-          <div class="text-center font-noto">
-            <div class="text-xl sm:text-3xl md:text-3xl md:pb-6">
-              <h2>BUSINESS AUTOPILOT MASTERY PROGRAM</h2>
-            </div>
-            <div class="text-3xl md:text-5xl pt-2 font-bold">
-              <h2>Grow Your Profits Working 1 Hr A Day In Business <br />&</h2>
-            </div>
-            <div class="text-2xl md:text-4xl">
-              Common Problems with Solution
-            </div>
-            <div class="text-xl md:text-2xl p-2">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi.
-            </div>
-            <button
-              class="py-4 px-8 sm:px-20 my-4 rounded-md bg-red-600 text-2xl md:text-4xl font-semibold"
-            >
-              Yes, I want to grow
-            </button>
+  .whatsapp :hover {
+    display: block;
+  }
+
+  .gradientText {
+    background: linear-gradient(to bottom left, #553c9a, #ee4b2b);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+  }
+</style>
+
+<body>
+  <header
+    class="h-[10vh] w-full fixed top-0 text-center text-xl md:text-2xl font-bold flex justify-center items-center bg-orange-100">
+    <h2>Dr. Prateek Agarwal</h2>
+  </header>
+  <main>
+    <section class="firstSection text-white z-10 relative">
+      <div class="bg-image md:py-48 px-6 flex flex-col justify-center">
+        <div class="text-center font-noto">
+          <div class="text-xl sm:text-3xl md:text-3xl md:pb-6">
+            <h2>BUSINESS AUTOPILOT MASTERY PROGRAM</h2>
           </div>
+          <div class="text-3xl md:text-5xl pt-2 font-bold">
+            <h2>Grow Your Profits Working 1 Hr A Day In Business <br />&</h2>
+          </div>
+          <div class="text-2xl md:text-4xl">
+            Common Problems with Solution
+          </div>
+          <div class="text-xl md:text-2xl p-2">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi.
+          </div>
+          <button class="py-4 px-8 sm:px-20 my-4 rounded-md bg-red-600 text-2xl md:text-4xl font-semibold">
+            Yes, I want to grow
+          </button>
         </div>
-      </section>
-      <section class="secondSection">
-        <div class="mx-6 mt-20">
-          <div class="py-14">
-            <div
-              class="text-center font-sans font-bold text-[1.6rem] md:text-3xl pb-5 md:pb-7"
-            >
-              <h2 class="gradientText">
-                COMMON CHALLENGES FACED BY BUSINESS OWNERS
-              </h2>
-            </div>
-            <div class="bg-black ml-auto mr-auto" style="width: 15rem"></div>
+      </div>
+    </section>
+    
+    <section class="secondSection section-margin">
+      <div class="flex flex-col items-center">
+        <div class="py-14">
+          <div class="text-center app-header">
+            <h2 class="gradientText">
+              COMMON CHALLENGES FACED BY BUSINESS OWNERS
+            </h2>
           </div>
-          <div
-            class="grid grid-cols-1 justify-center text-[19px] md:text-[1.3rem] md:grid-cols-2 max-w-screen-lg mx-auto"
-          >
-            <ul class="list-disc leading-9 px-12 [&>*]:mb-3">
-              <li>Everything Is Dependent On Them and let go all tht dudud</li>
-              <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</li>
-              <li>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</li>
-              <li>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</li>
-            </ul>
-            <ul class="list-disc leading-9 px-12 [&>*]:mb-3 md:mb-1">
-              <li>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</li>
-              <li>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</li>
-              <li>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</li>
-              <li>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</li>
-            </ul>
-          </div>
-        </div>
-      </section>
-      <section class="mt-20 thirdSection">
-        <div class="pt-9 flex flex-col items-center">
-          <h4
-            class="gradientText text-center font-bold text-[1.6rem] md:text-3xl pb-3 md:pb-5"
-          >
-            About Coach
-          </h4>
-          
+          <div class="bg-black ml-auto mr-auto" style="width: 15rem"></div>
         </div>
         <div
-          class="flex flex-col justify-center items-center px-8 mx-auto pt-8 md:flex-row"
-        >
-          <div class="max-w-2xl pt-7">
+          class="grid grid-cols-1 justify-center text-[19px] md:text-[1.3rem] md:grid-cols-2 max-w-screen-lg mx-auto">
+          <ul class="list-disc leading-7 lg:leading-9 px-12 [&>*]:mb-4">
+            <li>Everything Is Dependent On Them</li>
+            <li>Works 12+ hours a day still don't earn enough money</li>
+            <li>
+              Team Does Not Take Responsibility, does not perform the way you
+              want.
+            </li>
+            <li>You Can’t leave the office on staff(रायता फैला देते है)</li>
+            <li>
+              You Train People, They Switch Jobs For Higher Pay, Old people
+              blackmail you.
+            </li>
+            <li>Politics, Fire-Fighting Among Employees</li>
+            <li>Corruption Inside Company</li>
+          </ul>
+          <ul class="list-disc leading-7 lg:leading-9 px-12 [&>*]:mb-4 md:mb-1">
+            <li>
+              They Get The Salary They Want, But You Do Not Get The Work You
+              Want
+            </li>
+            <li>Sales Are Decreasing (Karma Sales)</li>
+            <li>
+              Less New Prospects, Existing Also Leaving Due To Competition
+            </li>
+            <li>Payments Stuck OR Large Credits In Market</li>
+            <li>
+              No Record Of Physical Inventory, Hence Stealing, Theft etc
+            </li>
+            <li>No Holidays, No Family Time</li>
+            <li>In Short "Band Baaja Pada Hai”</li>
+          </ul>
+        </div>
+        <h3 class="text-center mx-5 my-5 md:my-16 font-medium text-xl md:text-[1.4rem]">
+          If you have these problems, this program is for you.
+        </h3>
+      </div>
+    </section>
+    <section class="thirdSection section-margin">
+      <div class="mt-9 flex flex-col items-center">
+        <h4 class="gradientText app-header">About the Trainer</h4>
+      </div>
+      <div class="flex flex-col justify-center items-center px-8 mx-auto pt-8 md:flex-row">
+        <div class="max-w-2xl pt-7">
+          <div class="trainer border-2 p-6">
             <h2 class="uppercase font-bold text-2xl md:text-3xl">
               PRATEEK AGARWAL
             </h2>
-            <p
-              class="py-7 md:py-11 leading-loose text-[19px] md:text-xl font-normal"
-            >
-              Lorem ipsum dolor sit amet consectetur adipisicing elit.
-              Architecto sequi voluptatem exercitationem enim totam aliquid
-              obcaecati deleniti distinctio odit explicabo ut, esse a dicta
-              dolor consequatu <br /><br />
-              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Optio,
-              atque ratione. Libero officiis molestiae porro fugit velit nam
-              repellat, dolor maxime commo
+            <p class="my-5 text-xs">
+              Business Coach | Ex-Indian Embassy, Shanghai-China I Public
+              Speaker
             </p>
-            <div class="flex justify-center">
-              <button
-                class="text-white py-3 px-10 my-4 rounded-md bg-red-600 text-xl md:text-3xl font-semibold text-center"
-              >
-                Yes, Lets do it
-              </button>
-            </div>
           </div>
-          <div class="flex-shrink-0">
-            <img
-              class="mb-6"
-              style="width: 22rem"
-              src="https://img.freepik.com/premium-photo/cheerful-mature-businessman-isolated-white-background-businessman-formal-suit-studio-photo-professional-businessman-caucasian-businessman-suit_474717-142457.jpg?w=2000"
-              alt="businessman image"
-            />
+          <p class="my-5 font-noto">
+            I Help Business Owners Grow from Lala Company To LargeCompany.
+          </p>
+
+          <h3 class="subheading">Summary</h3>
+          <div class=" leading-7 text-[19px] md:text-xl font-normal">
+            <p class="">
+              Hi, I'm Prateek, a Business Coach by profession and an
+              entrepreneur at heart.
+              <br />
+              <br />
+              Ever since my childhood (literally, I was 9 years old), I began
+              assisting my Grandfather in Business. Back then, I learned some
+              spectacular people management techniques for getting work done
+              from people. <br /> <br>
+              However, I fell in love with people management when I started
+              playing hockey for the Delhi state team under 16. I realised the
+              true importance and potential when each and every member is
+              playing for a common goal.
+              <br />
+              <br />
+              I started my career with a job at Indian Embassy, Shanghai China.
+              I,along with 5 team members, worked under and got trained by an
+              IAS & IFS officer for a period of 1 year.
+              <br />
+              <br />
+              #LalaCompanyToLarge Company
+              <br />
+              <br />
+              After that job I joined our family Business. While assisting my
+              father in family business I could not go to attend my elder
+              brother's marriage in the USA (a story for another day), I
+              shattered within. However, failures didn't stop me from
+              experimenting and trying new things.
+              <br>
+              <br>
+              So, I went on a learning journey to learn "How To Run Your Business
+              Without You", in this learning process I realised the mistakes made by
+              Small & medium Business Owners taught by my Business Coach
+              <br>
+              <br>
+              I started Success World, where I as Business Coach was managing a
+              team of 3 crazy heads who are passionate for Business Coaching &
+              help Business Owners to Grow From Lala Company To LargeCompany.
+
+              <br><br>
+              In less than 3 years, we served over 100 clients from India. In Dec'2020,
+              I completed my PhD in "Business Management & Strategy" and was
+              awarded with Honarary Doctorate from Sorbon University, France.
+              <br><br>
+              Entrepreneur, APN-News, Hello Post, Indian Retailers, Silicon IndiaStartup,
+              SME Futures, Startups and other reputed publications have featured
+              me in their articles and other resources.
+              <br><br>
+              I have delivered over 100+ workshops and 15 talks in companies,
+              colleges as well as online events. 
+              <br>
+              <br>
+              <p class="">#LalaCompanyToLarge Company </p>
+              <br>
+            <ul class="list-disc [&>*]:mb-2">
+              <li>Helping business owners to grow from Lala Company To Large
+                Company
+              </li>
+              <li>Delivering talks, workshops & seminars in colleges, universities,
+                online & offline summits and other events on personal productiv-
+                ity, team building,marketing strategies and entrepreneurship as
+                Business Coach
+              </li>
+              <li>Teaching online courses on Business Growth </li>
+              <li>Acted as a Business Coach to companies like govt. contrac-
+                tor,manufacturing, trading, retail, distribution network, Travel, Professionals like CA, Doctor, Lawyers
+                etc.</li>
+              <li>Helped Business Owners generate highest revenue in life time of
+                company using Business hacks and marketing strategy within 4
+                months of execution,
+              </li>
+              <li>Helped Business Owner to Run Business Working 1 Hr A Day In
+                Business
+              </li>
+              <li>15+ companies became debt free using finance hacks I taught </li>
+            </ul>
+
+            </p>
+            <p class="ownerEducation">
+              <h3 class="subheading">Education</h3>
+              <p class="">Bachelor of Business Administration (B.B.A.) from IMS College, Ghaziabad </p>
+              <p class="">Masters in Chinese Language from Shenyang University, China </p>
+              <p>PhD in Business Management & Strategy from Sorbon University, France </p>
+              <br>
+              <p class="">#LalaCompanyToLarge Company </p>
+            </p>
+          </div>
+          <div class="flex justify-center py-4">
+            <button
+              class="text-white py-3 px-10 my-4 rounded-md bg-red-600 text-xl md:text-3xl font-semibold text-center">
+              Yes, Lets do it
+            </button>
           </div>
         </div>
-      </section>
-      <!-- <section class="fourthSection mt-16">
+        <div class="flex-shrink-0">
+          <img class="md:mb-6" style="width: 22rem"
+            src="https://img.freepik.com/premium-photo/cheerful-mature-businessman-isolated-white-background-businessman-formal-suit-studio-photo-professional-businessman-caucasian-businessman-suit_474717-142457.jpg?w=2000"
+            alt="businessman image" />
+        </div>
+      </div>
+    </section>
+    <!-- <section class="fourthSection mt-16">
           <div class=" flex flex-col items-center">
               <h3 class="uppercase text-3xl font-bold text-center">what you will get in the program</h3>
               <div class="line bg-black mt-2 w-80 "></div>
@@ -165,45 +258,32 @@
                 <span></span>
             </div>
         </section> -->
-      <section class="fifthSection w-full min-h-[50vh] my-32">
-        <div class="flex flex-col md:flex-row justify-center items-center pt-9">
-          <div
-            class="map w-[90vw] md:mb-0 h-[50vh] md:mr-14 md:h-[40vh] md:w-[40vw] md:max-w-4xl"
-          >
-            <!-- <div class="mapouter"><div class="gmap_canvas"><iframe class="gmap_iframe" width="100%" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?width=600&amp;height=400&amp;hl=en&amp;q=Sai International Public School&amp;t=&amp;z=16&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"></iframe><a href="https://gachanox.io/">Gacha Nox</a></div><style>.mapouter{position:relative;text-align:right;width:100%;height:400px;}.gmap_canvas {overflow:hidden;background:none!important;width:100%;height:400px;}.gmap_iframe {height:400px!important;}</style></div> -->
-            <iframe
-              class="w-full h-full"
-              src="https://maps.google.com/maps?width=600&amp;height=400&amp;hl=en&amp;q=28.740235,77.254181&amp;t=&amp;z=16&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"
-              frameborder="0"
-            ></iframe>
-          </div>
-          <div class="contact flex flex-col items-center mt-20 md:mt-0">
-            <h3
-              class="gradientText text-xl md:text-2xl font-bold pb-2 text-blue-700"
-            >
-              Contact us
-            </h3>
-            <div
-              class="contactDetails font-sans text-[19px] md:text-xl font-semibold mt-5 leading-9 [&>*]:mb-2"
-            >
-              <p class="">
-                <span class="opacity-80">Email : </span
-                ><a href="#">business@gmail.com</a>
-              </p>
-              <p>
-                <span class="opacity-80">Phone : </span
-                ><a href="#">0034303453</a>
-              </p>
-              <p>
-                <span class="opacity-80">WhatsApp : </span
-                ><a href="#">0101010101</a>
-              </p>
-            </div>
+    <section class="fifthSection w-full min-h-[50vh] my-32">
+      <div class="flex flex-col-reverse md:flex-row justify-center items-center md:pt-9">
+        <div class="map w-[90vw] md:mb-0 h-[50vh] md:mr-14 md:h-[40vh] md:w-[40vw] md:max-w-4xl">
+          <!-- <div class="mapouter"><div class="gmap_canvas"><iframe class="gmap_iframe" width="100%" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?width=600&amp;height=400&amp;hl=en&amp;q=Sai International Public School&amp;t=&amp;z=16&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"></iframe><a href="https://gachanox.io/">Gacha Nox</a></div><style>.mapouter{position:relative;text-align:right;width:100%;height:400px;}.gmap_canvas {overflow:hidden;background:none!important;width:100%;height:400px;}.gmap_iframe {height:400px!important;}</style></div> -->
+          <iframe class="w-full h-full"
+            src="https://maps.google.com/maps?width=600&amp;height=400&amp;hl=en&amp;q=28.740235,77.254181&amp;t=&amp;z=16&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"
+            frameborder="0"></iframe>
+        </div>
+        <div class="contact flex flex-col items-center my-20 md:my-0">
+          <h3 class="gradientText app-header text-blue-700">Contact us</h3>
+          <div class="contactDetails font-sans text-[19px] md:text-xl font-semibold mt-5 leading-9 [&>*]:mb-2">
+            <p class="">
+              <span class="opacity-80">Email : </span><a href="#">business@gmail.com</a>
+            </p>
+            <p>
+              <span class="opacity-80">Phone : </span><a href="#">0034303453</a>
+            </p>
+            <p>
+              <span class="opacity-80">WhatsApp : </span><a href="#">0101010101</a>
+            </p>
           </div>
         </div>
-      </section>
-    </main>
-    <!-- <footer>
+      </div>
+    </section>
+  </main>
+  <!-- <footer>
         <div class="bg-cyan-300 min-h-[7rem] min-w-[23rem]">
             <div class="grid grid-cols-3 m-4 pt-4">
                 <div class=" text-white whatsappIcon bg-whatsapp max-w-[200px] p-2 rounded-full flex justify-center ">
@@ -215,46 +295,41 @@
         </div>
     </footer> -->
 
-    <section class="sideContact">
-      <div
-        class="text-white whatsappIcon bg-whatsapp max-w-[200px] p-2 rounded-full flex justify-center fixed right-2 bottom-12 cursor-pointer"
-      >
-        <i class="fa-brands fa-whatsapp text-3xl md:text-4xl"></i>
-        <span class="text-[19px] md:text-xl font-semibold ml-3 hidden whatsapp"
-          >WhatsApp</span
-        >
-      </div>
-    </section>
-    <footer class="bg-white rounded-lg shadow dark:bg-gray-800 mb-4">
-      <div
-        class="w-full mx-auto max-w-screen-xl p-4 md:flex md:items-center md:justify-between"
-      >
-        <span class="text-sm text-gray-500 sm:text-center dark:text-gray-400"
-          >Copyright©
-          <a href="https://flowbite.com/" class="hover:underline"></a>
-        </span>
-        <ul
-          class="flex flex-wrap items-center mt-3 text-sm font-medium text-gray-500 dark:text-gray-400 sm:mt-0"
-        >
-          <li>
-            <a href="#" class="mr-4 hover:underline md:mr-6">About</a>
-          </li>
-          <li>
-            <a href="#" class="mr-4 hover:underline md:mr-6">Privacy Policy</a>
-          </li>
-          <li>
-            <a href="#" class="mr-4 hover:underline md:mr-6">Licensing</a>
-          </li>
-          <li>
-            <a href="#" class="hover:underline">Contact</a>
-          </li>
-        </ul>
-      </div>
-    </footer>
+  <section class="sideContact ">
+    <div
+      class="text-white whatsappIcon bg-whatsapp max-w-[200px] p-2 rounded-full flex justify-center fixed right-2 lg:right-7 bottom-12 cursor-pointer z-10">
+      <i class="fa-brands fa-whatsapp text-3xl md:text-4xl"></i>
+      <span class="text-[19px] md:text-xl font-semibold ml-3 hidden whatsapp">WhatsApp</span>
+    </div>
+  </section>
+  <section class="up-arrow z-0 ">
+    <a href="#" class="fixed bottom-28 right-2 lg:right-7 rounded-full p-2">
+    <i class="fa-solid fa-angle-up  text-3xl md:text-4xl"></i>
+  </a>
+  </section>
+  <footer class="bg-white rounded-lg shadow dark:bg-gray-800 mb-4">
+    <div class="w-full mx-auto max-w-screen-xl p-4 md:flex md:items-center md:justify-between">
+      <span class="text-sm text-gray-500 sm:text-center dark:text-gray-400">Copyright©
+        <a href="https://flowbite.com/" class="hover:underline"></a>
+      </span>
+      <ul class="flex flex-wrap items-center mt-3 text-sm font-medium text-gray-500 dark:text-gray-400 sm:mt-0">
+        <li>
+          <a href="#" class="mr-4 hover:underline md:mr-6">About</a>
+        </li>
+        <li>
+          <a href="#" class="mr-4 hover:underline md:mr-6">Privacy Policy</a>
+        </li>
+        <li>
+          <a href="#" class="mr-4 hover:underline md:mr-6">Licensing</a>
+        </li>
+        <li>
+          <a href="#" class="hover: first-letter:">Contact</a>
+        </li>
+      </ul>
+    </div>
+  </footer>
 
-    <script
-      src="https://kit.fontawesome.com/ea48e96199.js"
-      crossorigin="anonymous"
-    ></script>
-  </body>
+  <script src="https://kit.fontawesome.com/ea48e96199.js" crossorigin="anonymous"></script>
+</body>
+
 </html>

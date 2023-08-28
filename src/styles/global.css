@@ -1,3 +1,17 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer components {
+    .app-header {
+        @apply text-center font-bold text-3xl sm:text-4xl md:text-5xl pb-3 md:pb-5 
+    }
+    .section-margin{
+        @apply my-6 mt-20 
+    }
+    .subheading{
+        @apply text-xl font-semibold font-noto text-center py-7 md:py-11
+    }
+
+
+}
