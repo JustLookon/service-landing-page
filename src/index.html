@@ -42,6 +42,13 @@
     .whatsapp :hover {
       display: block;
     }
+    .gradientText {
+      background: linear-gradient(to bottom left, #553c9a, #ee4b2b);
+      -webkit-background-clip: text;
+      background-clip: text;
+      color: transparent;
+      /* -webkit-text-fill-color: ; */
+    }
   </style>
 
   <body>
@@ -54,8 +61,8 @@
       <section class="firstSection text-white">
         <div class="bg-image md:py-48 px-6 flex flex-col justify-center">
           <div class="text-center font-noto">
-            <div class="text-2xl md:text-3xl md:pb-6">
-              BUSINESS AUTOPILOT MASTERY PROGRAM
+            <div class="text-xl sm:text-3xl md:text-3xl md:pb-6">
+              <h2>BUSINESS AUTOPILOT MASTERY PROGRAM</h2>
             </div>
             <div class="text-3xl md:text-5xl pt-2 font-bold">
               <h2>Grow Your Profits Working 1 Hr A Day In Business <br />&</h2>
@@ -67,7 +74,7 @@
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi.
             </div>
             <button
-              class="py-4 px-20 my-4 rounded-md bg-red-600 text-2xl md:text-4xl font-semibold"
+              class="py-4 px-8 sm:px-20 my-4 rounded-md bg-red-600 text-2xl md:text-4xl font-semibold"
             >
               Yes, I want to grow
             </button>
@@ -75,17 +82,16 @@
         </div>
       </section>
       <section class="secondSection">
-        <div class="">
+        <div class="mx-6 mt-20">
           <div class="py-14">
             <div
               class="text-center font-sans font-bold text-[1.6rem] md:text-3xl pb-5 md:pb-7"
             >
-              COMMON CHALLENGES FACED BY BUSINESS OWNERS
+              <h2 class="gradientText">
+                COMMON CHALLENGES FACED BY BUSINESS OWNERS
+              </h2>
             </div>
-            <div
-              class="line bg-black ml-auto mr-auto"
-              style="width: 15rem"
-            ></div>
+            <div class="bg-black ml-auto mr-auto" style="width: 15rem"></div>
           </div>
           <div
             class="grid grid-cols-1 justify-center text-[19px] md:text-[1.3rem] md:grid-cols-2 max-w-screen-lg mx-auto"
@@ -105,12 +111,14 @@
           </div>
         </div>
       </section>
-      <section class="thirdSection">
+      <section class="mt-20 thirdSection">
         <div class="pt-9 flex flex-col items-center">
-          <h4 class="text-center font-bold text-2xl md:text-4xl pb-3 md:pb-5">
+          <h4
+            class="gradientText text-center font-bold text-[1.6rem] md:text-3xl pb-3 md:pb-5"
+          >
             About Coach
           </h4>
-          <div class="line bg-black mt-2" style="width: 12rem"></div>
+          
         </div>
         <div
           class="flex flex-col justify-center items-center px-8 mx-auto pt-8 md:flex-row"
@@ -119,7 +127,9 @@
             <h2 class="uppercase font-bold text-2xl md:text-3xl">
               PRATEEK AGARWAL
             </h2>
-            <p class="py-7 md:py-11 leading-loose text-[19px] md:text-xl font-normal">
+            <p
+              class="py-7 md:py-11 leading-loose text-[19px] md:text-xl font-normal"
+            >
               Lorem ipsum dolor sit amet consectetur adipisicing elit.
               Architecto sequi voluptatem exercitationem enim totam aliquid
               obcaecati deleniti distinctio odit explicabo ut, esse a dicta
@@ -155,10 +165,10 @@
                 <span></span>
             </div>
         </section> -->
-      <section class="fifthSection w-full min-h-[50vh]">
+      <section class="fifthSection w-full min-h-[50vh] my-32">
         <div class="flex flex-col md:flex-row justify-center items-center pt-9">
           <div
-            class="map w-[90vw] mb-11 md:mb-0 h-[50vh] md:mr-14 md:h-[40vh] md:w-[40vw] md:max-w-4xl bg-black"
+            class="map w-[90vw] md:mb-0 h-[50vh] md:mr-14 md:h-[40vh] md:w-[40vw] md:max-w-4xl"
           >
             <!-- <div class="mapouter"><div class="gmap_canvas"><iframe class="gmap_iframe" width="100%" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?width=600&amp;height=400&amp;hl=en&amp;q=Sai International Public School&amp;t=&amp;z=16&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"></iframe><a href="https://gachanox.io/">Gacha Nox</a></div><style>.mapouter{position:relative;text-align:right;width:100%;height:400px;}.gmap_canvas {overflow:hidden;background:none!important;width:100%;height:400px;}.gmap_iframe {height:400px!important;}</style></div> -->
             <iframe
@@ -167,11 +177,12 @@
               frameborder="0"
             ></iframe>
           </div>
-          <div class="contact flex flex-col items-center">
-            <h3 class="text-xl md:text-2xl font-bold pb-2 text-blue-700">
+          <div class="contact flex flex-col items-center mt-20 md:mt-0">
+            <h3
+              class="gradientText text-xl md:text-2xl font-bold pb-2 text-blue-700"
+            >
               Contact us
             </h3>
-            <div class="line bg-blue-700 w-20 h-[2px]"></div>
             <div
               class="contactDetails font-sans text-[19px] md:text-xl font-semibold mt-5 leading-9 [&>*]:mb-2"
             >
