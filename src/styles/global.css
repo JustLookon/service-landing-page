@@ -4,16 +4,25 @@
 
 @layer components {
     .app-header {
-        @apply text-center font-bold text-3xl py-14 px-2 sm:text-4xl md:text-5xl 
+        @apply text-center font-bold text-3xl my-14 px-2 sm:text-4xl md:text-5xl  
     }
     .section-mar-pad{
         @apply my-6 mt-20 px-3
     }
     .subHeading{
-        @apply text-xl font-semibold font-noto text-center py-7 md:py-11
+        @apply text-xl font-semibold font-noto text-center py-6 md:py-11 w-56 sm:w-fit mx-auto lg:text-2xl
+    }
+    .listHeading{
+        @apply text-xl font-medium font-noto text-center py-6 md:py-11 w-56 sm:w-fit
     }
     .showBar{
-        @apply  text-white flex items-center justify-between p-3 rounded-md py-4 font-semibold max-w-lg mx-auto
+        @apply  text-blue-500   flex items-center justify-around  font-semibold max-w-lg mx-auto border-4
+    }
+    .list-grid{
+        @apply grid text-[17px] pb-12 px-1 mx-auto justify-center max-w-screen-lg md:grid-cols-2 md:text-[1.3rem] md:max-w-4xl
+    }
+    .listUl{
+        @apply px-8 leading-5 md:leading-8 lg:leading-9 list-disc [&>*]:mb-3 pt-7 md:text-[1.01rem] lg:text-xl 
     }
 
 }
