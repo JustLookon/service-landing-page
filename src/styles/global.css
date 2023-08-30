@@ -19,10 +19,48 @@
         @apply  text-blue-500   flex items-center justify-around  font-semibold max-w-lg mx-auto border-4
     }
     .list-grid{
-        @apply grid text-[17px] pb-12 px-1 mx-auto justify-center max-w-screen-lg md:grid-cols-2 md:text-[1.3rem] md:max-w-4xl
+        @apply grid text-[17px] pb-12 px-1 mx-auto justify-center max-w-screen-lg  md:text-[1.3rem] md:max-w-4xl
     }
     .listUl{
-        @apply px-8 leading-5 md:leading-8 lg:leading-9 list-disc [&>*]:mb-3 pt-7 md:text-[1.01rem] lg:text-xl 
+        @apply px-8 leading-6 md:leading-8 lg:leading-9 list-disc [&>*]:mb-3 pt-7 md:text-[1.01rem] lg:text-xl 
     }
 
 }
+
+
+.bg-image {
+    background-image: url("https://img.freepik.com/free-photo/abstract-luxury-gradient-blue-background-smooth-dark-blue-with-black-vignette-studio-banner_1258-56228.jpg?w=1380&t=st=1693130896~exp=1693131496~hmac=9ecdd404e3dda3cbeaf7487594e1921f1fb8717ee41907dddd6a767f3140901b");
+    height: 90vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-top: 10vh;
+    background-position: center center;
+  }
+
+  .line {
+    min-width: 5px;
+    height: 3px;
+    max-width: 800px;
+    margin-top: 1rem;
+  }
+
+  .bg-whatsapp {
+    background-color: #25d366;
+  }
+
+  .bg-whatsapp:hover+.whatsapp {
+    visibility: visible;
+}
+
+  .gradientText {
+    background: linear-gradient(to bottom left, #553c9a, #ee4b2b);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    /* FOR TEMPRARY */
+
+  }
+
+  .unHide, .toggle{
+    transition: all .35s ease;
+  }

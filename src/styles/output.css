@@ -1141,7 +1141,6 @@ input:checked + .toggle-bg {
 @media (min-width: 768px) {
   .list-grid {
     max-width: 56rem;
-    grid-template-columns: repeat(2, minmax(0, 1fr));
     font-size: 1.3rem;
   }
 }
@@ -1151,7 +1150,7 @@ input:checked + .toggle-bg {
   padding-left: 2rem;
   padding-right: 2rem;
   padding-top: 1.75rem;
-  line-height: 1.25rem;
+  line-height: 1.5rem;
 }
 
 @media (min-width: 768px) {
@@ -1310,8 +1309,24 @@ input:checked + .toggle-bg {
   margin-bottom: 1rem;
 }
 
+.ml-1 {
+  margin-left: 0.25rem;
+}
+
+.ml-10 {
+  margin-left: 2.5rem;
+}
+
+.ml-14 {
+  margin-left: 3.5rem;
+}
+
 .ml-3 {
   margin-left: 0.75rem;
+}
+
+.ml-5 {
+  margin-left: 1.25rem;
 }
 
 .mr-4 {
@@ -1390,12 +1405,20 @@ input:checked + .toggle-bg {
   height: 100%;
 }
 
+.max-h-0 {
+  max-height: 0px;
+}
+
 .min-h-\[50vh\] {
   min-height: 50vh;
 }
 
 .min-h-\[7rem\] {
   min-height: 7rem;
+}
+
+.w-0 {
+  width: 0px;
 }
 
 .w-1\/2 {
@@ -1434,6 +1457,10 @@ input:checked + .toggle-bg {
   min-width: 23rem;
 }
 
+.max-w-2xl {
+  max-width: 42rem;
+}
+
 .max-w-3xl {
   max-width: 48rem;
 }
@@ -1450,20 +1477,16 @@ input:checked + .toggle-bg {
   max-width: 200px;
 }
 
+.max-w-\[300px\] {
+  max-width: 300px;
+}
+
 .max-w-screen-xl {
   max-width: 1280px;
 }
 
-.max-w-md {
-  max-width: 28rem;
-}
-
-.max-w-5xl {
-  max-width: 64rem;
-}
-
-.max-w-2xl {
-  max-width: 42rem;
+.max-w-xs {
+  max-width: 20rem;
 }
 
 .flex-1 {
@@ -1636,6 +1659,10 @@ input:checked + .toggle-bg {
   border-width: 2px;
 }
 
+.border-4 {
+  border-width: 4px;
+}
+
 .border-blue-600 {
   --tw-border-opacity: 1;
   border-color: rgb(28 100 242 / var(--tw-border-opacity));
@@ -1739,6 +1766,10 @@ input:checked + .toggle-bg {
   padding: 0.625rem;
 }
 
+.p-3 {
+  padding: 0.75rem;
+}
+
 .p-4 {
   padding: 1rem;
 }
@@ -1749,6 +1780,11 @@ input:checked + .toggle-bg {
 
 .p-8 {
   padding: 2rem;
+}
+
+.px-1 {
+  padding-left: 0.25rem;
+  padding-right: 0.25rem;
 }
 
 .px-10 {
@@ -1915,6 +1951,10 @@ input:checked + .toggle-bg {
   color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 
+.underline-offset-2 {
+  text-underline-offset: 2px;
+}
+
 .opacity-0 {
   opacity: 0;
 }
@@ -1960,6 +2000,12 @@ input:checked + .toggle-bg {
   transition-duration: 150ms;
 }
 
+.transition-all {
+  transition-property: all;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
+}
+
 .transition-opacity {
   transition-property: opacity;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
@@ -1976,6 +2022,50 @@ input:checked + .toggle-bg {
   transition-timing-function: cubic-bezier(0, 0, 0.2, 1);
 }
 
+.bg-image {
+  background-image: url("https://img.freepik.com/free-photo/abstract-luxury-gradient-blue-background-smooth-dark-blue-with-black-vignette-studio-banner_1258-56228.jpg?w=1380&t=st=1693130896~exp=1693131496~hmac=9ecdd404e3dda3cbeaf7487594e1921f1fb8717ee41907dddd6a767f3140901b");
+  height: 90vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-top: 10vh;
+  background-position: center center;
+}
+
+.line {
+  min-width: 5px;
+  height: 3px;
+  max-width: 800px;
+  margin-top: 1rem;
+}
+
+.bg-whatsapp {
+  background-color: #25d366;
+}
+
+.bg-whatsapp:hover+.whatsapp {
+  visibility: visible;
+}
+
+.gradientText {
+  background: linear-gradient(to bottom left, #553c9a, #ee4b2b);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  /* FOR TEMPRARY */
+}
+
+.unHide, .toggle{
+  transition: all .35s ease;
+}
+
+.hover\:max-w-xs:hover {
+  max-width: 20rem;
+}
+
+.hover\:overflow-visible:hover {
+  overflow: visible;
+}
+
 .hover\:border-gray-300:hover {
   --tw-border-opacity: 1;
   border-color: rgb(209 213 219 / var(--tw-border-opacity));
@@ -1989,6 +2079,11 @@ input:checked + .toggle-bg {
 .hover\:bg-gray-100:hover {
   --tw-bg-opacity: 1;
   background-color: rgb(243 244 246 / var(--tw-bg-opacity));
+}
+
+.hover\:bg-red-300:hover {
+  --tw-bg-opacity: 1;
+  background-color: rgb(248 180 180 / var(--tw-bg-opacity));
 }
 
 .hover\:bg-white:hover {
@@ -2210,6 +2305,10 @@ input:checked + .toggle-bg {
     max-width: 80rem;
   }
 
+  .md\:list-inside {
+    list-style-position: inside;
+  }
+
   .md\:flex-row {
     flex-direction: row;
   }
@@ -2280,10 +2379,6 @@ input:checked + .toggle-bg {
 
   .lg\:items-start {
     align-items: flex-start;
-  }
-
-  .lg\:text-ellipsis {
-    text-overflow: ellipsis;
   }
 
   .lg\:pt-12 {

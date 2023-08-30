@@ -19,48 +19,11 @@
       }
     } */
 
-  .bg-image {
-    background-image: url("https://img.freepik.com/free-photo/abstract-luxury-gradient-blue-background-smooth-dark-blue-with-black-vignette-studio-banner_1258-56228.jpg?w=1380&t=st=1693130896~exp=1693131496~hmac=9ecdd404e3dda3cbeaf7487594e1921f1fb8717ee41907dddd6a767f3140901b");
-    height: 90vh;
-    background-repeat: no-repeat;
-    background-size: cover;
-    margin-top: 10vh;
-    background-position: center center;
-  }
-
-  .line {
-    min-width: 5px;
-    height: 3px;
-    max-width: 800px;
-    margin-top: 1rem;
-  }
-
-  .bg-whatsapp {
-    background-color: #25d366;
-  }
-
-  .whatsapp :hover {
-    display: block;
-  }
-
-  .gradientText {
-    background: linear-gradient(to bottom left, #553c9a, #ee4b2b);
-    -webkit-background-clip: text;
-    background-clip: text;
-    color: transparent;
-    /* FOR TEMPRARY */
-
-  }
-
-  .onHover:hover+.showList {
-
-    display: block;
-  }
 </style>
 
 <body>
   <header
-    class="h-[10vh] w-full fixed top-0 text-center text-xl md:text-2xl font-bold flex justify-center items-center bg-orange-100">
+    class="h-[10vh] w-full fixed top-0 text-center text-xl md:text-2xl font-bold flex justify-center items-center bg-orange-100 z-50">
     <h2>Dr. Prateek Agarwal</h2>
   </header>
   <main>
@@ -79,9 +42,9 @@
           <div class="text-2xl md:text-4xl">
             Common Problems with Solution
           </div>
-          <div class="text-xl md:text-2xl p-2">
+          <!-- <div class="text-xl md:text-2xl p-2">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi.
-          </div>
+          </div> -->
           <button class="py-4 px-8  my-4 rounded-md bg-red-600 text-2xl sm:px-20 md:text-4xl font-semibold">
             Yes, I want to grow
           </button>
@@ -182,7 +145,8 @@
 
       <div class="font-noto mx-3">
         <h3 class="app-header gradientText">WHAT YOU WILL GET IN THE PROGRAM</h3>
-        <p class="text-center text-lg lg:text-xl max-w-2xl mx-auto">This Program is divided over a period of 1 year with different modules each week
+        <p class="text-center text-lg lg:text-xl max-w-2xl mx-auto">This Program is divided over a period of 1 year with
+          different modules each week
           and each
           month.</p>
         <h4 class="subHeading">PROGRAM DETAILS</h4>
@@ -199,7 +163,7 @@
 
 
           <div class=" rounded-md bg-white max-w-4xl mx-auto">
-            <a href="#" class="showBar onHover  max-w-4xl">
+            <a href="#" class="showBar showHidden   max-w-4xl">
               <div class="listHeading  md:text-2xl">
                 <span class="md:max-w-7xl w-[15rem]">PERSONAL DISCIPLINE </span>
               </div>
@@ -211,8 +175,8 @@
               </div>
             </a>
 
-
-            <div class=" list-grid showList hidden  ">
+            <div class="p-0 max-h-0 unHide transition-all overflow-hidden">
+            <div class=" list-grid  border-4 ">
               <ul class="listUl">
                 <li>How to get out of your comfort zone </li>
                 <li>How to be at your best health </li>
@@ -230,6 +194,7 @@
                 <li>Have your clear business goals </li>
               </ul>
             </div>
+            </div>
           </div>
 
         </div>
@@ -244,7 +209,7 @@
           </div>
 
           <div class=" rounded-md bg-white max-w-4xl mx-auto">
-            <a href="#" class="showBar onHover max-w-4xl">
+            <a href="#" class="showBar showHidden  max-w-4xl">
               <div class="listHeading  md:text-2xl">
                 <span class="md:max-w-7xl w-[15rem]"> Team - Building Your Own Army</span>
               </div>
@@ -256,8 +221,8 @@
               </div>
             </a>
 
-
-            <div class=" list-grid showList hidden  ">
+            <div class="p-0 max-h-0 unHide transition-all overflow-hidden">
+            <div class=" list-grid  border-4">
               <ul class="listUl">
                 <li>Team bonding like we have in sports </li>
                 <li>Align team with company goals </li>
@@ -269,6 +234,7 @@
                 <li>Team member will stop coming to you for small small problems </li>
                 <li>Build 2nd line leaders </li>
               </ul>
+            </div>
             </div>
           </div>
 
@@ -284,7 +250,7 @@
           </div>
 
           <div class=" rounded-md bg-white max-w-4xl mx-auto">
-            <a href="#" class="showBar onHover  max-w-4xl">
+            <a href="#" class="showBar showHidden   max-w-4xl">
               <div class="listHeading  md:text-2xl">
                 <span class="md:max-w-7xl w-[15rem]"> S.A.P. (Systems for Automation of Process) </span>
               </div>
@@ -296,34 +262,35 @@
               </div>
             </a>
 
-
-            <div class=" list-grid showList hidden  ">
-              <ul class="listUl">
-                <li>Start of creating systems in business </li>
-                <li>Defining diff. hierarchy of company </li>
-                <li>Defining company organization chart </li>
-                <li>Clearly putting each and every person on diff. boxes of org. chart </li>
-                <li>Clearly defining job description for each person and each job </li>
-                <li>Defining flow of work in organization </li>
-                <li>Defining diff. checkpoints in organization </li>
-                <li>Define company policy </li>
-                <li>Manage company finance </li>
-                <li>Make a structured plan to repay debts </li>
-                <li>Company finance restructuring </li>
-              </ul>
-              <ul class="listUl">
-                <li>Creating reserve and surplus </li>
-                <li>Create passive income </li>
-                <li>How and why to withdraw funds for directors/owners </li>
-                <li>The Report card of company monthly P&L statement </li>
-                <li>Vendor payment system </li>
-                <li>Payment collection process </li>
-                <li>Inventory management </li>
-                <li>Dispatch management </li>
-                <li>TQC- Total quality control </li>
-                <li>Create your own call center </li>
-                <li>Create your own customer support center </li>
-              </ul>
+            <div class="p-0 max-h-0 unHide transition-all overflow-hidden">
+              <div class=" list-grid border-4  ">
+                <ul class="listUl">
+                  <li>Start of creating systems in business </li>
+                  <li>Defining diff. hierarchy of company </li>
+                  <li>Defining company organization chart </li>
+                  <li>Clearly putting each and every person on diff. boxes of org. chart </li>
+                  <li>Clearly defining job description for each person and each job </li>
+                  <li>Defining flow of work in organization </li>
+                  <li>Defining diff. checkpoints in organization </li>
+                  <li>Define company policy </li>
+                  <li>Manage company finance </li>
+                  <li>Make a structured plan to repay debts </li>
+                  <li>Company finance restructuring </li>
+                </ul>
+                <ul class="listUl">
+                  <li>Creating reserve and surplus </li>
+                  <li>Create passive income </li>
+                  <li>How and why to withdraw funds for directors/owners </li>
+                  <li>The Report card of company monthly P&L statement </li>
+                  <li>Vendor payment system </li>
+                  <li>Payment collection process </li>
+                  <li>Inventory management </li>
+                  <li>Dispatch management </li>
+                  <li>TQC- Total quality control </li>
+                  <li>Create your own call center </li>
+                  <li>Create your own customer support center </li>
+                </ul>
+              </div>
             </div>
           </div>
 
@@ -340,18 +307,18 @@
 
 
           <div class=" rounded-md bg-white max-w-4xl mx-auto">
-            <a href="#" class="showBar onHover max-w-4xl">
+            <a href="#" class="showBar showHidden  max-w-4xl">
               <div class="listHeading  md:text-2xl">
                 <span class="md:max-w-7xl w-[15rem]"> Team - Building Your Own Army </span>
               </div>
               <div class="down-arrow">
                 <button class="toggle">
-                  <i class="fa fa-angle-down" style="font-size:24px"></i>
+                  <i class="fa fa-angle-down " style="font-size:24px"></i>
                 </button>
               </div>
             </a>
-
-            <div class=" list-grid showList hidden  ">
+            <div class="p-0 max-h-0 unHide transition-all overflow-hidden">
+            <div class=" list-grid  border-4  ">
               <div class="subHeading">HUMAN RESOURCE MANAGEMENT </div>
               <ul class="listUl">
                 <li>How to recruit new team members </li>
@@ -364,6 +331,7 @@
               </ul>
               <div class="subHeading">Work Like Army, Treat Like Family </div>
             </div>
+          </div>
           </div>
 
         </div>
@@ -378,7 +346,7 @@
 
 
           <div class=" rounded-md bg-white max-w-4xl mx-auto">
-            <a href="#" class="showBar onHover max-w-4xl">
+            <a href="#" class="showBar showHidden  max-w-4xl">
 
               <div class="listHeading  md:text-2xl">
                 <span class="md:max-w-7xl w-[15rem]"> Marketing & Sales </span>
@@ -391,8 +359,8 @@
               </div>
             </a>
 
-
-            <div class=" list-grid showList hidden  ">
+            <div class="p-0 max-h-0 unHide transition-all overflow-hidden">
+            <div class="  list-grid  border-4   ">
               <ul class="listUl">
                 <li>Never put all eggs in one basket </li>
                 <li>Have 3 levels of products </li>
@@ -513,7 +481,7 @@
               <br>
             <p class="">#LalaCompanyToLarge Company </p>
             <br>
-            <ul class="list-disc [&>*]:mb-2">
+            <ul class="list-disc [&>*]:mb-2 md:list-inside">
               <li>Helping business owners to grow from Lala Company To Large
                 Company
               </li>
@@ -576,15 +544,15 @@
         </div>
         <div class="contact flex flex-col items-center lg:items-start my-20 md:my-0">
           <h3 class="gradientText app-header text-blue-700">Contact us</h3>
-          <div class="contactDetails font-sans text-[19px] md:text-xl font-semibold mt-5 lg:mt-0 leading-9 [&>*]:mb-2">
+          <div class="contactDetails font-sans text-[19px] md:text-xl font-semibold mt-5 lg:mt-0 leading-9 [&>*]:mb-2 px-1 max-w-xs">
             <p class="">
-              <span class="opacity-80">Email : </span><a href="#">business@gmail.com</a>
+              <span class="opacity-80">Email : </span><a href="mailto:surya9112000@gmail.com" class="text-blue-600 ml-10 ">surya9112000@gmail.com</a>
             </p>
             <p>
-              <span class="opacity-80">Phone : </span><a href="#">0034303453</a>
+              <span class="opacity-80">Phone : </span><a href="tel:+918929265998" class=" text-blue-600 underline-offset-2 ml-14">8929265998</a>
             </p>
             <p>
-              <span class="opacity-80">WhatsApp : </span><a href="#">0101010101</a>
+              <span class="opacity-80">WhatsApp : </span><a href="https://wa.me/918929265998" class="text-blue-600 underline-offset-2 ml-5">8929265998</a>
             </p>
           </div>
         </div>
@@ -606,20 +574,21 @@
   <!-- WHATSAPP ICON  -->
 
   <section class="sideContact ">
-    <div
-      class="text-white whatsappIcon bg-whatsapp max-w-[200px] p-2 rounded-full flex justify-center fixed right-2 lg:right-7 bottom-12 cursor-pointer z-10">
-      <i class="fa-brands fa-whatsapp text-3xl md:text-4xl"></i>
-      <span class="text-[19px] md:text-xl font-semibold ml-3 hidden whatsapp">WhatsApp</span>
-    </div>
+    <a href="https://wa.me/918929265998"
+      class="text-white whatsappIcon bg-whatsapp max-w-[300px] p-3 rounded-full flex justify-center  fixed right-2 lg:right-7 bottom-12 cursor-pointer z-10 hover:max-w-xs">
+      <i class="fa-brands fa-whatsapp text-3xl md:text-4xl "></i>
+      <span class="text-[19px] md:text-xl font-semibold ml-1 w-0 overflow-hidden hover:overflow-visible  whatsapp">WhatsApp</span>
+    </a>
   </section>
 
   <!-- UP ARROW  -->
 
-  <!-- <section class="up-arrow z-0 ">
-    <a href="#" class="fixed bottom-28 right-2 lg:right-7 rounded-full p-2">
+  <!-- <section class="md:up-arrow z-0 ">
+    <a href="#" class="fixed bottom-28 right-2 lg:right-7 rounded-full p-2 hover:bg-red-300">
       <i class="fa-solid fa-angle-up  text-3xl md:text-4xl"></i>
     </a>
   </section> -->
+
   <footer class="bg-white rounded-lg shadow dark:bg-gray-800 mb-4">
     <div class="w-full mx-auto max-w-screen-xl p-4 md:flex md:items-center md:justify-between">
       <span class="text-sm text-gray-500 sm:text-center dark:text-gray-400">Copyright©
@@ -641,6 +610,40 @@
       </ul>
     </div>
   </footer>
+
+  <script>
+
+    let showHidden = document.getElementsByClassName("showHidden");
+    let unHide = document.getElementsByClassName("unHide");
+    let toggle = document.getElementsByClassName("toggle")
+    for (let i = 0; i < showHidden.length; i++) {
+      const maxHeightVal = "2000px"
+
+      showHidden[i].addEventListener("click", (e) => {
+        e.preventDefault();
+        for (let j = 0; j < 5; j++) {
+          // We have a condition where we are checking if the current element is in expanded state or not 
+          // &&
+          // We are excluding the clicked element
+          if (unHide[j].style.maxHeight === maxHeightVal && unHide[i] !== unHide[j]) {
+            unHide[j].style.maxHeight = "0"
+            toggle[j].style.transform = "rotate(0)"
+          }
+        }
+
+        const isShown = unHide[i].style.maxHeight === maxHeightVal
+
+        if ( !isShown) {
+          unHide[i].style.maxHeight = maxHeightVal
+          toggle[i].style.transform = "rotate(180deg)"
+        } else {
+          unHide[i].style.maxHeight = "0"
+          toggle[i].style.transform = "rotate(0)"
+        }
+      })
+    }
+
+  </script>
 
   <script src="https://kit.fontawesome.com/ea48e96199.js" crossorigin="anonymous"></script>
 </body>

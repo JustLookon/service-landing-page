@@ -4,8 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "serve ./src",
-    "build": "npx tailwindcss -i ./src/styles/global.css -o ./src/styles/output.css --watch"
+    "start": "npx tailwindcss -i ./src/styles/global.css -o ./src/styles/output.css --watch",
+    "build": "npx tailwindcss -i ./src/styles/global.css -o ./src/styles/output.css"
   },
   "author": "",
   "license": "ISC",
