@@ -49,7 +49,7 @@
   }
 
   .bg-whatsapp:hover+.whatsapp {
-    visibility: visible;
+    width: 200px;
 }
 
   .gradientText {
@@ -62,5 +62,5 @@
   }
 
   .unHide, .toggle{
-    transition: all .35s ease;
+    transition: all .7s ease;
   }
