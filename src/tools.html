@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <link href="./styles/output.css" rel="stylesheet" />
+  <title>SLIDER</title>
+</head>
+
+<style>
+  *{
+    margin: 0;
+    padding: 0;
+  }
+  .sliderContainer{
+    /* overflow: hidden; */
+    border: 2px solid red;
+    width: 100%;
+    height: 100vh;
+  }
+</style>
+<body>
+
+  <div class="sliderContainer relative ">
+    <!-- SLIDER BUTTONS -->
+    <div class="sliderButtons ">
+      <a href="#" class="previousBtn absolute z-10  top-96 left-4 bg-green-600">
+        click   
+        </a>
+  
+      <a href="#" class="nextBtn  absolute z-10 top-96  right-4 bg-green-600">
+        click   
+      </a>
+    </div>
+
+    <!-- IMAGES TO SLIDE -->
+    <div class="image1  absolute w-full h-full transition-all" style="transform: translateX(-100%)">
+      <img class="w-full h-full object-cover" src="https://unsplash.com/assets/api/applications/trello-70f6cfec7eb8a71993c451ff8178cb0e7fedf972efec1327a0a65f858ba63ec0.jpg" alt="">
+    </div>
+    <div class="image1 absolute w-full h-full transition-all" style="transform: translateX(0%)">
+      <img class="w-full h-full" src="https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885_960_720.jpg" width="100%" alt="">
+    </div>
+  </div>
+
+  <script>
+    // PREVIOUS BUTTON
+    let image = document.getElementsByClassName("image1")
+    let previousBtn = document.getElementsByClassName("previousBtn")[0];
+    const currentImg = 0;
+    previousBtn.addEventListener("click",(e)=>{
+      e.preventDefault();
+
+      if(image[0].style.transform ==="translateX(-100%)" && image[1].style.transform ==="translateX(0%)"){
+        image[0].style.transform = "translateX(0%)";
+        image[1].style.transform = "translateX(100%)";
+      }
+    })
+
+      // NEXT BUTTON
+    let nextBtn = document.getElementsByClassName("nextBtn")[0];
+    nextBtn.addEventListener("click",(e)=>{
+      e.preventDefault();
+
+      // if(image1.style.transform ==="translateX(-100%)" && image2.style.transform ==="translateX(0%)"){
+      //   image1.style.transform = "translateX(200%)";
+      //   image2.style.transform = "translateX(-100%)";
+      // }
+
+      // image1.style.transform = "translateX(0%)";
+      // image2.style.transform = "translateX(100%)";
+
+    })
+  </script>
+</body>
+</html> 

@@ -13,10 +13,10 @@
         @apply text-xl font-semibold font-noto text-center py-6 md:py-11 w-56 sm:w-fit mx-auto lg:text-2xl
     }
     .listHeading{
-        @apply text-xl font-medium font-noto text-center py-6 md:py-11 w-56 sm:w-fit
+        @apply text-xl font-medium font-noto text-center py-6 md:py-11 w-56 sm:w-fit 
     }
     .showBar{
-        @apply  text-blue-500   flex items-center justify-around  font-semibold max-w-lg mx-auto border-4
+        @apply  text-blue-500   flex items-center justify-around  font-semibold max-w-lg mx-auto border-4 hover:bg-gray-200 
     }
     .list-grid{
         @apply grid text-[17px] pb-12 px-1 mx-auto justify-center max-w-screen-lg  md:text-[1.3rem] md:max-w-4xl
@@ -30,10 +30,10 @@
 
 .bg-image {
     background-image: url("https://img.freepik.com/free-photo/abstract-luxury-gradient-blue-background-smooth-dark-blue-with-black-vignette-studio-banner_1258-56228.jpg?w=1380&t=st=1693130896~exp=1693131496~hmac=9ecdd404e3dda3cbeaf7487594e1921f1fb8717ee41907dddd6a767f3140901b");
-    height: 90vh;
+    height: 93vh;
     background-repeat: no-repeat;
     background-size: cover;
-    margin-top: 10vh;
+    margin-top: 7vh;
     background-position: center center;
   }
 

@@ -10,6 +10,12 @@ module.exports = {
   },
   plugins: [
     require('flowbite/plugin')
-  ]
+  ],
+  variants: {
+    extend: {
+      divideColor: ['group-hover'],
+      width:['group-hover']
+    }
+  },
 }
 
