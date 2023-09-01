@@ -36,6 +36,11 @@
     margin-top: 7vh;
     background-position: center center;
   }
+  /* @media screen and (min-width: 900px) {
+      .bg-image{
+        height: 93vh;
+      }
+  } */
 
   .line {
     min-width: 5px;

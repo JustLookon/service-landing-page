@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SLIDER</title>
+</head>
+<style>
+    *{
+        margin: 0;
+    }
+    .slider{
+        display: flex;
+        /* justify-content: center; */
+        /* align-items: center; */
+        width: 100vw;
+        height: 100vh;
+        overflow: hidden;
+    }
+
+    .img1{
+        object-fit: cover;
+        /* transform: translate(-13vw); */
+        /* animation: slide 5s ease 5s infinite alternate; */
+    }
+    .img2{
+        object-fit: cover;
+
+        /* transform: translate(0vw); */
+        /* animation: slide 5s ease 5s infinite alternate; */
+    }
+    .img3{
+        object-fit: cover;
+
+        /* transform: translate(13vw); */
+        /* animation: slide 5s ease 5s infinite alternate; */
+    }
+
+    @keyframes slide {
+        from{
+            transform: translate(-64vw);
+        }
+        to{
+            transform: translate(64vw);
+        }
+    }
+
+</style>
+<body>
+    <div class="slider">
+
+        <img src="istockphoto-1357410492-1024x1024.jpg" alt="" class="img1  ">
+        <!-- <img src="istockphoto-1357410492-1024x1024.jpg" alt="" class="img2  ">
+        <img src="istockphoto-1357410492-1024x1024.jpg" alt="" class="img3  "> -->
+    </div>
+</body>
+</html>
