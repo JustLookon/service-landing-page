@@ -1413,6 +1413,10 @@ input:checked + .toggle-bg {
   margin-top: 9rem;
 }
 
+.mb-16 {
+  margin-bottom: 4rem;
+}
+
 .block {
   display: block;
 }
@@ -1553,6 +1557,10 @@ input:checked + .toggle-bg {
   max-width: 1280px;
 }
 
+.max-w-xs {
+  max-width: 20rem;
+}
+
 .flex-1 {
   flex: 1 1 0%;
 }
@@ -1657,6 +1665,10 @@ input:checked + .toggle-bg {
   flex-wrap: wrap;
 }
 
+.content-center {
+  align-content: center;
+}
+
 .items-start {
   align-items: flex-start;
 }
@@ -1683,6 +1695,14 @@ input:checked + .toggle-bg {
 
 .justify-between {
   justify-content: space-between;
+}
+
+.justify-around {
+  justify-content: space-around;
+}
+
+.justify-evenly {
+  justify-content: space-evenly;
 }
 
 .space-x-2 > :not([hidden]) ~ :not([hidden]) {
@@ -1830,12 +1850,120 @@ input:checked + .toggle-bg {
   --tw-bg-opacity: 0.5;
 }
 
-.bg-\[url\(https\:\/\/lp\.businesscoachingindia\.com\/wp-content\/uploads\/2021\/12\/2\.png\)\] {
-  background-image: url(https://lp.businesscoachingindia.com/wp-content/uploads/2021/12/2.png);
+.bg-\[url\(\'\/desktop-wallpaper-blue-backgrounds-hq-blue-abstract-aqua-clean\.webp\'\)\] {
+  background-image: url('/desktop-wallpaper-blue-backgrounds-hq-blue-abstract-aqua-clean.webp');
 }
 
 .bg-gradient-to-r {
   background-image: linear-gradient(to right, var(--tw-gradient-stops));
+}
+
+.bg-\[url\(\'src\/desktop-wallpaper-blue-backgrounds-hq-blue-abstract-aqua-clean\.webp\'\)\] {
+  background-image: url('src/desktop-wallpaper-blue-backgrounds-hq-blue-abstract-aqua-clean.webp');
+}
+
+.bg-\[url\(\'\'\)\] {
+  background-image: url('');
+}
+
+.bg-\[url\(\'\.\'\)\] {
+  background-image: url('.');
+}
+
+.bg-\[url\(\'\.\/\'\)\] {
+  background-image: url('./');
+}
+
+.bg-\[url\(\'\.\/desk\'\)\] {
+  background-image: url('./desk');
+}
+
+.bg-\[url\(\'\.\/desktop\'\)\] {
+  background-image: url('./desktop');
+}
+
+.bg-\[url\(\'\.\/bg-2\.webp\'\)\] {
+  background-image: url('./bg-2.webp');
+}
+
+.bg-\[url\(\'\"\.\/bg-2\.webp\"\'\)\] {
+  background-image: url('"./bg-2.webp"');
+}
+
+.bg-\[url\(\"\.\/bg-2\.webp\"\)\] {
+  background-image: url("./bg-2.webp");
+}
+
+.bg-gradient-to-bl {
+  background-image: linear-gradient(to bottom left, var(--tw-gradient-stops));
+}
+
+.bg-\[url\(\'\.\.\/assets\/bg-image\.webp\'\)\] {
+  background-image: url('../assets/bg-image.webp');
+}
+
+.bg-\[url\(\'\.\.\'\)\] {
+  background-image: url('..');
+}
+
+.bg-\[url\(\'\.\.\/assest\'\)\] {
+  background-image: url('../assest');
+}
+
+.bg-\[url\(\'\.\.\/assets\.\'\)\] {
+  background-image: url('../assets.');
+}
+
+.bg-\[url\(\'\.\.\/assets\/\'\)\] {
+  background-image: url('../assets/');
+}
+
+.bg-\[url\(\'\.\.\/assets\/b\'\)\] {
+  background-image: url('../assets/b');
+}
+
+.bg-\[url\(\'\.\.\/assets\/bg\'\)\] {
+  background-image: url('../assets/bg');
+}
+
+.bg-\[url\(\'\.\.\/assets\/bg-2\'\)\] {
+  background-image: url('../assets/bg-2');
+}
+
+.bg-\[url\(\'\.\.\/assets\/bg-2\.webp\'\)\] {
+  background-image: url('../assets/bg-2.webp');
+}
+
+.bg-\[url\(\'\.\/bg\'\)\] {
+  background-image: url('./bg');
+}
+
+.bg-\[url\(\'\.\/assets\/bg-2\.webp\'\)\] {
+  background-image: url('./assets/bg-2.webp');
+}
+
+.bg-\[url\(\'\.\/assets\/pi\'\)\] {
+  background-image: url('./assets/pi');
+}
+
+.bg-\[url\(\'\.\/assets\/px\'\)\] {
+  background-image: url('./assets/px');
+}
+
+.bg-\[url\(\'\.\/assets\/pxfuel\.webp\'\)\] {
+  background-image: url('./assets/pxfuel.webp');
+}
+
+.bg-\[url\(\'\.\.\/assets\/pxfuel\.webp\'\)\] {
+  background-image: url('../assets/pxfuel.webp');
+}
+
+.bg-\[url\(\'\.\.\/assets\/free\'\)\] {
+  background-image: url('../assets/free');
+}
+
+.bg-\[url\(\'\.\.\/assets\/bg\.\'\)\] {
+  background-image: url('../assets/bg.');
 }
 
 .from-indigo-200 {
@@ -1866,6 +1994,14 @@ input:checked + .toggle-bg {
 
 .to-pink-200 {
   --tw-gradient-to: #FAD1E8 var(--tw-gradient-to-position);
+}
+
+.bg-cover {
+  background-size: cover;
+}
+
+.bg-no-repeat {
+  background-repeat: no-repeat;
 }
 
 .p-0 {
@@ -2462,6 +2598,14 @@ input:checked + .toggle-bg {
 
   .md\:mr-6 {
     margin-right: 1.5rem;
+  }
+
+  .md\:mb-16 {
+    margin-bottom: 4rem;
+  }
+
+  .md\:mb-2 {
+    margin-bottom: 0.5rem;
   }
 
   .md\:flex {

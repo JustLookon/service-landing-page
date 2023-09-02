@@ -32,9 +32,9 @@ for (let i = 0; i < showHidden.length; i++) {
 
     // SCROLL TO 
 
-    let showBar = document.getElementsByClassName("showBar")[0]
-    showBar.addEventListener("click",()=>{
-        showBar.scrollTo()
+    // let showBar = document.getElementsByClassName("showBar")[0]
+    // showBar.addEventListener("click",()=>{
+    //     showBar.scrollTo()
     // showBar.scrollTo({
     //     top:10000,
     //     left:0,
@@ -43,6 +43,6 @@ for (let i = 0; i < showHidden.length; i++) {
     // });
 
     // if(showBar.style.color = "")
-    showBar.style.color="red"
+    // showBar.style.color="red"
 
-})
+// }) 
