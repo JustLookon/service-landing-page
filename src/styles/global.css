@@ -4,7 +4,7 @@
 
 @layer components {
     .app-header {
-        @apply text-center font-bold text-3xl my-14 px-2 sm:text-4xl md:text-5xl  
+        @apply text-center font-bold text-3xl my-14 px-2 sm:text-4xl md:text-5xl
     }
     .section-mar-pad{
         @apply my-6 mt-20 px-3
@@ -13,18 +13,20 @@
         @apply text-xl font-semibold font-noto text-center py-6 md:py-11 w-56 sm:w-fit mx-auto lg:text-2xl
     }
     .listHeading{
-        @apply text-xl font-medium font-noto text-center py-6 md:py-11 w-56 sm:w-fit 
+        @apply text-xl font-medium font-noto py-6 w-56 md:py-11  sm:w-fit md:text-2xl
     }
     .showBar{
-        @apply  text-blue-500   flex items-center justify-around  font-semibold max-w-lg mx-auto border-4 hover:bg-gray-200 
+        @apply  text-blue-500   flex items-center justify-between  font-semibold max-w-lg mx-auto border-4 hover:bg-gray-200  px-4 md:px-8
+    }
+    .list-grid-dropdown{
+        @apply grid text-[17px] pb-12 px-1 md:mx-10   max-w-screen-lg  md:text-[1.3rem] md:max-w-4xl
     }
     .list-grid{
-        @apply grid text-[17px] pb-12 px-1 mx-auto justify-center max-w-screen-lg  md:text-[1.3rem] md:max-w-4xl
+        @apply grid text-[17px] pb-12 px-1 mx-auto justify-center max-w-screen-lg  md:text-[1.3rem] md:max-w-5xl md:grid-cols-2
     }
     .listUl{
-        @apply px-8 leading-6 md:leading-8 lg:leading-9 list-disc [&>*]:mb-3 pt-7 md:text-[1.01rem] lg:text-xl 
+        @apply px-8 leading-6 md:leading-8 lg:leading-9 list-disc [&>*]:mb-3 pt-7 md:text-[1.01rem] lg:text-xl
     }
-
 }
 
 
