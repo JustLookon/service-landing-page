@@ -27,6 +27,9 @@
     .listUl{
         @apply px-8 leading-6 md:leading-8 lg:leading-9 list-disc [&>*]:mb-3 pt-7 md:text-[1.01rem] lg:text-xl
     }
+    .listOl{
+        @apply px-8 leading-6 md:leading-8 lg:leading-9 list-decimal [&>*]:mb-3 pt-7 md:text-[1.01rem] lg:text-xl
+    }
 }
 
 
