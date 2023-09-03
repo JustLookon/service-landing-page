@@ -2,151 +2,265 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="./styles/output.css" rel="stylesheet" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <link href="./styles/output.css" rel="stylesheet"/>
     <title>SLIDER</title>
 </head>
 <style>
-    *{
+    * {
         margin: 0;
         padding: 0;
     }
 
 
-    
-
 </style>
 <body>
 
-    <div class="slider relative flex w-screen h-screen overflow-hidden">
+<div class="slider relative flex w-screen h-screen overflow-hidden">
 
-        <img src="./assets/istockphoto-1357410492-1024x1024.jpg" alt="" class="absolute w-full h-full object-cover  transition-all" style="transform: translateX(-100%);">
-        <img src="./assets/sunrise_image.jpg" alt="" class="absolute w-full h-full object-cover transition-all" style="transform: translateX(0%);">
-        <img src="./assets/pxfuel.webp" alt="" class="absolute w-full h-full object-cover  transition-all" style="transform: translateX(100%);">
+    <img alt="" data-role="image-slider-item" class="absolute w-full h-full object-cover  transition-all"
+         data-current-position="0"
+         src="./assets/istockphoto-1357410492-1024x1024.jpg" style="transform: translateX(0);">
+    <img alt="" data-role="image-slider-item" class="absolute w-full h-full object-cover transition-all" src="./assets/sunrise_image.jpg"
+         data-current-position="1"
+         style="transform: translateX(100%);">
+    <img alt="" data-role="image-slider-item" class="absolute w-full h-full object-cover  transition-all" src="./assets/pxfuel.webp"
+         data-current-position="-1"
+         style="transform: translateX(-100%);">
 
-        <!-- <button class="previous absolute left-4 top-2/4 p-5 rounded-full bg-white " aria-label="name"><</button>
-        <button aria-disabled="" class="next absolute right-4 top-2/4 p-5 rounded-full bg-white " aria-label="name">></button> -->
+    <button class="previous absolute left-4 top-2/4 p-5 rounded-full bg-white " aria-label="name"><</button>
+    <button aria-disabled="" class="next absolute right-4 top-2/4 p-5 rounded-full bg-white " aria-label="name">></button>
 
-        <div class="whichImage absolute bottom-5 left-[40%] bg-white w-4 h-4 rounded-full"></div>
-        <div class="whichImage absolute bottom-5 left-[50%] bg-white w-4 h-4 rounded-full"></div>
-        <div class="whichImage absolute bottom-5 left-[60%] bg-white w-4 h-4 rounded-full"></div>
-    </div>
+    <div class="whichImage absolute bottom-5 left-[40%] bg-white w-4 h-4 rounded-full"></div>
+    <div class="whichImage absolute bottom-5 left-[50%] bg-white w-4 h-4 rounded-full"></div>
+    <div class="whichImage absolute bottom-5 left-[60%] bg-white w-4 h-4 rounded-full"></div>
+</div>
 
-    <script>
-let img = document.getElementsByTagName("img");
-        let previous = document.getElementsByTagName("button")[0];
-        let next = document.getElementsByTagName("button")[1];
-        
-        let whichImage = document.getElementsByClassName("whichImage");
-        
-        // setInterval(() => {
-        //   if(img[0].style.transform==="translateX(-100%)"  &&  img[1].style.transform === "translateX(0%)" &&  img[2].style.transform === "translateX(100%)")
-        //     {img[0].style.transform = "translateX(-200%)"
-        //     img[1].style.transform = "translateX(-100%)"
-        //     img[2].style.transform = "translateX(0%)"}
-            
-        //     else if(img[0].style.transform==="translateX(-200%)"  &&  img[1].style.transform === "translateX(-100%)" &&  img[2].style.transform === "translateX(0%)")
-        //     {img[0].style.transform = "translateX(0%)"
-        //     img[1].style.transform = "translateX(100%)"
-        //     img[2].style.transform = "translateX(200%)"}
-            
-            
-        //     else if(img[0].style.transform==="translateX(0%)"  &&  img[1].style.transform === "translateX(100%)" &&  img[2].style.transform === "translateX(200%)")
-        //     {img[0].style.transform = "translateX(-100%)"
-        //     img[1].style.transform = "translateX(0%)"
-        //     img[2].style.transform = "translateX(100%)"}
-        // }, 4000);
+<script>
+  let img = document.getElementsByTagName("img");
+  let previous = document.getElementsByTagName("button")[0];
+  let next = document.getElementsByTagName("button")[1];
 
-        
-        
-        
-        // BUTTON SLIDER
-        
-        // next.addEventListener("click", ()=>{
-        //     if(img[0].style.transform==="translateX(-100%)"  &&  img[1].style.transform === "translateX(0%)" &&  img[2].style.transform === "translateX(100%)")
-        //     {img[0].style.transform = "translateX(-200%)"
-        //     img[1].style.transform = "translateX(-100%)"
-        //     img[2].style.transform = "translateX(0%)"}
-            
-        //     else if(img[0].style.transform==="translateX(-200%)"  &&  img[1].style.transform === "translateX(-100%)" &&  img[2].style.transform === "translateX(0)")
-        //     {return}
-            
-        //     else if(img[0].style.transform==="translateX(0%)"  &&  img[1].style.transform === "translateX(100%)" &&  img[2].style.transform === "translateX(200%)")
-        //     {img[0].style.transform = "translateX(-100%)"
-        //     img[1].style.transform = "translateX(0%)"
-        //     img[2].style.transform = "translateX(100%)"}
-            
-            
-        // })
-        // previous.addEventListener("click", ()=>{
-        //     if(img[0].style.transform==="translateX(-100%)"  &&  img[1].style.transform === "translateX(0%)" &&  img[2].style.transform === "translateX(100%)")
-        //     {img[0].style.transform = "translateX(0%)"
-        //     img[1].style.transform = "translateX(100%)"
-        //     img[2].style.transform = "translateX(200%)"}
+  let whichImage = document.getElementsByClassName("whichImage");
 
-        //     else if(img[0].style.transform==="translateX(0%)"  &&  img[1].style.transform === "translateX(100%)" &&  img[2].style.transform === "translateX(200%)")
-        //     {return}
+  // function() {}
+  // () => {}
 
-        //     if(img[0].style.transform==="translateX(-200%)"  &&  img[1].style.transform === "translateX(-100%)" &&  img[2].style.transform === "translateX(0%)")
-        //     {img[0].style.transform = "translateX(-100%)"
-        //     img[1].style.transform = "translateX(0%)"
-        //     img[2].style.transform = "translateX(100%)"}
+  class Slider {
+    sliderImages = document.querySelectorAll('img[data-role="image-slider-item"]'); // length = 3 // 0, 1, 2
+    // currentImage = this.sliderImages[0];
 
-        // })
+    move(isPrev) {
+      return () => {
+        // If the currentImage is first or last we should not execute it further according to the argument "isPrev"
+        // if(this.currentImage === this.sliderImages[isPrev ? 0 : this.sliderImages.length - 1]) return;
 
-        // AUTOMATIC SLIDER
+        this.sliderImages.forEach((sliderImage) => {
+          const currentPosition = parseInt(sliderImage.dataset.currentPosition);
+          sliderImage.style.transitionProperty = 'all';
 
-        setInterval(() => {
-          
-          if(img[0].style.transform==="translateX(-100%)"  &&  img[1].style.transform === "translateX(0%)" &&  img[2].style.transform === "translateX(100%)"){
-            whichImage[0].style.background= "white"
-            whichImage[1].style.background= "white"
+          // Increase/Decrease the current position of the image element by 1 according to the argument "isPrev"
+          const newPosition = currentPosition + (isPrev ? 1 : -1);
+          sliderImage.dataset.currentPosition = newPosition.toString();
 
+          // Updating the currentImage
+          // if(newPosition === 0) this.currentImage = sliderImage;
 
-            img[1].style.transitionProperty = "all";
-            img[2].style.transitionProperty = "all";
-            img[0].style.transitionProperty = "none";
-            img[0].style.transform = "translateX(100%)"
-            // img[0].style.transitionProperty = "all";
-            img[1].style.transform = "translateX(-100%)"
-            img[2].style.transform = "translateX(0%)"
-            
-            whichImage[2].style.background= "black";
+          // Update the transform property for the image element
+          sliderImage.style.transform = `translateX(${newPosition * 100}%)`
+        })
+
+        // Edge cases
+        // When we are on the last, we should push the first image in the next position
+        // We are checking if we are at the last image or not just by checking that if we have the next image in place.
+        // And we can check if the next image in place by, checking the "data-current-position" attribute if we have any image that has the value 1 then it means the next image is waiting in its place.
+        const nextImage = document.querySelector(`img[data-role="image-slider-item"][data-current-position="1"]`)
+        const isOnLast = !nextImage;
+        // We have two condition - isOnLast(self explanatory) && !isPrev
+        // !isPrev - We are gonna fall into this block only if this method is triggered by next button
+        if(isOnLast && !isPrev) {
+          console.log('isOnLast - ');
+          // Selecting the first image by a logic explained below
+          // Let's say We have 3 images
+          // And we are at the last
+          // so our data-current-position will be looking like - "-2" "-1" "0"
+          // We need to get the first image and the first image holds -2 i.e, (length of the images - 1) = 2 to the negative results in -2.
+          const firstImageInTheBuffer = document.querySelector(`img[data-role="image-slider-item"][data-current-position="-${this.sliderImages.length - 1}"]`);
+          // We are positioning the first image to the next image's position i.e, data-current-position=1 and transform=translateX(100%), so that we can have smooth transition.
+          firstImageInTheBuffer.dataset.currentPosition = '1';
+          firstImageInTheBuffer.style.transitionProperty = 'none';
+          firstImageInTheBuffer.style.transform = `translateX(100%)`
         }
-          
-          else if(img[0].style.transform==="translateX(100%)"  &&  img[1].style.transform === "translateX(-100%)" &&  img[2].style.transform === "translateX(0%)"){
-            whichImage[1].style.background= "white"
-            whichImage[2].style.background= "white"
 
-
-            img[0].style.transitionProperty = "all";
-            img[2].style.transitionProperty = "all";
-          img[0].style.transform = "translateX(0%)";
-            img[1].style.transitionProperty = "none";
-          img[1].style.transform = "translateX(100%)";
-            // img[1].style.transitionProperty = "all";
-            img[2].style.transform = "translateX(-100%)"
-            whichImage[0].style.background= "black";
+        // When we are on the first, we should push the last in the prev position
+        // We are checking if we are at the first image or not, just by checking that if we have the previous image in place.
+        // And we can check if the prev image in place by, checking the "data-current-position" attribute if we have any image that has the value -1 then it means the prev image is waiting in its place.
+        const prevImage = document.querySelector(`img[data-role="image-slider-item"][data-current-position="-1"]`)
+        const isOnFirst = !prevImage;
+        // We have two condition - isOnFirst(self explanatory) && isPrev
+        // isPrev - We are gonna fall into this block only if this method is triggered by previous button
+        if(isOnFirst && isPrev) {
+          // Selecting the last image by a logic explained below
+          // Let's say We have 3 images
+          // And we are at the first
+          // so our data-current-position will be looking like - "0" "1" "2"
+          // We need to get the first image and the first image holds 2 i.e, (length of the images - 1) = 2.
+          const lastImageInTheBuffer = document.querySelector(`img[data-role="image-slider-item"][data-current-position="${this.sliderImages.length - 1}"]`);
+          // We are positioning the last image to the next image's position i.e, data-current-position=-1 and transform=translateX(-100%), so that we can have smooth transition.
+          lastImageInTheBuffer.dataset.currentPosition = '-1';
+          lastImageInTheBuffer.style.transitionProperty = 'none';
+          lastImageInTheBuffer.style.transform = `translateX(-100%)`
         }
-          
-          else if(img[0].style.transform==="translateX(0%)"  &&  img[1].style.transform === "translateX(100%)" &&  img[2].style.transform === "translateX(-100%)"){
-            whichImage[0].style.background= "white"
-            whichImage[2].style.background= "white"
-
-
-            img[0].style.transitionProperty = "all";
-            img[1].style.transitionProperty = "all";
-          img[0].style.transform = "translateX(-100%)"
-          img[1].style.transform = "translateX(0%)"
-        img[2].style.transitionProperty = "none";
-        // img[2].style.transitionProperty = "all";
-        img[2].style.transform = "translateX(100%)";
-        whichImage[1].style.background= "black";
+      }
     }
-     
-        }, 2000);
+  }
 
-        
-    </script>
+  // let sliderImages = document.querySelectorAll('img[data-role="image-slider-item"]'); // length = 3 // 0, 1, 2
+  // // console.log('sliderImages - ', sliderImages);
+  // let currentImage = sliderImages[0];
+  // function handleNextImage() {
+  //   if(currentImage === sliderImages[sliderImages.length - 1]) return;
+  //
+  //   sliderImages.forEach((sliderImage, index) => {
+  //     // console.log('sliderImage - ', sliderImage, index);
+  //     const currentPosition = parseInt(sliderImage.dataset.currentPosition);
+  //     console.log('sliderImage - ', sliderImage, currentPosition);
+  //
+  //     // Decrease the current position of the image element by 1
+  //     const newPosition = currentPosition - 1;
+  //     sliderImage.dataset.currentPosition = newPosition.toString();
+  //
+  //     // Updating the currentImage
+  //     if(newPosition === 0) currentImage = sliderImage;
+  //
+  //     // Update the transform property for the image element
+  //     sliderImage.style.transform = `translateX(${newPosition * 100}%)`
+  //   })
+  // }
+  // function handlePrevImage() {
+  //   if(currentImage === sliderImages[0]) return;
+  //
+  //   sliderImages.forEach((sliderImage, index) => {
+  //     // console.log('sliderImage - ', sliderImage, index);
+  //     const currentPosition = parseInt(sliderImage.dataset.currentPosition);
+  //     console.log('sliderImage - ', sliderImage, currentPosition);
+  //
+  //     // Decrease the current position of the image element by 1
+  //     const newPosition = currentPosition + 1;
+  //     sliderImage.dataset.currentPosition = newPosition.toString();
+  //
+  //     // Updating the currentImage
+  //     if(newPosition === 0) currentImage = sliderImage;
+  //
+  //     // Update the transform property for the image element
+  //     sliderImage.style.transform = `translateX(${newPosition * 100}%)`
+  //   })
+  // }
+
+  const slider = new Slider();
+
+  next.addEventListener('click', slider.move(false));
+  previous.addEventListener('click', slider.move(true));
+
+
+  // setInterval(() => {
+  //   if(img[0].style.transform==="translateX(-100%)"  &&  img[1].style.transform === "translateX(0%)" &&  img[2].style.transform === "translateX(100%)")
+  //     {img[0].style.transform = "translateX(-200%)"
+  //     img[1].style.transform = "translateX(-100%)"
+  //     img[2].style.transform = "translateX(0%)"}
+
+  //     else if(img[0].style.transform==="translateX(-200%)"  &&  img[1].style.transform === "translateX(-100%)" &&  img[2].style.transform === "translateX(0%)")
+  //     {img[0].style.transform = "translateX(0%)"
+  //     img[1].style.transform = "translateX(100%)"
+  //     img[2].style.transform = "translateX(200%)"}
+
+
+  //     else if(img[0].style.transform==="translateX(0%)"  &&  img[1].style.transform === "translateX(100%)" &&  img[2].style.transform === "translateX(200%)")
+  //     {img[0].style.transform = "translateX(-100%)"
+  //     img[1].style.transform = "translateX(0%)"
+  //     img[2].style.transform = "translateX(100%)"}
+  // }, 4000);
+
+
+  // BUTTON SLIDER
+
+  // next.addEventListener("click", ()=>{
+  //     if(img[0].style.transform==="translateX(-100%)"  &&  img[1].style.transform === "translateX(0%)" &&  img[2].style.transform === "translateX(100%)")
+  //     {img[0].style.transform = "translateX(-200%)"
+  //     img[1].style.transform = "translateX(-100%)"
+  //     img[2].style.transform = "translateX(0%)"}
+
+  //     else if(img[0].style.transform==="translateX(-200%)"  &&  img[1].style.transform === "translateX(-100%)" &&  img[2].style.transform === "translateX(0)")
+  //     {return}
+
+  //     else if(img[0].style.transform==="translateX(0%)"  &&  img[1].style.transform === "translateX(100%)" &&  img[2].style.transform === "translateX(200%)")
+  //     {img[0].style.transform = "translateX(-100%)"
+  //     img[1].style.transform = "translateX(0%)"
+  //     img[2].style.transform = "translateX(100%)"}
+
+
+  // })
+  // previous.addEventListener("click", ()=>{
+  //     if(img[0].style.transform==="translateX(-100%)"  &&  img[1].style.transform === "translateX(0%)" &&  img[2].style.transform === "translateX(100%)")
+  //     {img[0].style.transform = "translateX(0%)"
+  //     img[1].style.transform = "translateX(100%)"
+  //     img[2].style.transform = "translateX(200%)"}
+
+  //     else if(img[0].style.transform==="translateX(0%)"  &&  img[1].style.transform === "translateX(100%)" &&  img[2].style.transform === "translateX(200%)")
+  //     {return}
+
+  //     if(img[0].style.transform==="translateX(-200%)"  &&  img[1].style.transform === "translateX(-100%)" &&  img[2].style.transform === "translateX(0%)")
+  //     {img[0].style.transform = "translateX(-100%)"
+  //     img[1].style.transform = "translateX(0%)"
+  //     img[2].style.transform = "translateX(100%)"}
+
+  // })
+
+  // AUTOMATIC SLIDER
+
+  // setInterval(() => {
+  //
+  //   if (img[0].style.transform === "translateX(-100%)" && img[1].style.transform === "translateX(0%)" && img[2].style.transform === "translateX(100%)") {
+  //     whichImage[0].style.background = "white"
+  //     whichImage[1].style.background = "white"
+  //
+  //     img[1].style.transitionProperty = "all";
+  //     img[2].style.transitionProperty = "all";
+  //     img[0].style.transitionProperty = "none";
+  //     img[0].style.transform = "translateX(100%)"
+  //     // img[0].style.transitionProperty = "all";
+  //     img[1].style.transform = "translateX(-100%)"
+  //     img[2].style.transform = "translateX(0%)"
+  //     whichImage[2].style.background = "black";
+  //   } else if (img[0].style.transform === "translateX(100%)" && img[1].style.transform === "translateX(-100%)" && img[2].style.transform === "translateX(0%)") {
+  //     whichImage[1].style.background = "white"
+  //     whichImage[2].style.background = "white"
+  //     img[0].style.transitionProperty = "all";
+  //     img[2].style.transitionProperty = "all";
+  //     img[0].style.transform = "translateX(0%)";
+  //     img[1].style.transitionProperty = "none";
+  //     img[1].style.transform = "translateX(100%)";
+  //     // img[1].style.transitionProperty = "all";
+  //     img[2].style.transform = "translateX(-100%)"
+  //     whichImage[0].style.background = "black";
+  //   } else if (img[0].style.transform === "translateX(0%)" && img[1].style.transform === "translateX(100%)" && img[2].style.transform === "translateX(-100%)") {
+  //     whichImage[0].style.background = "white"
+  //     whichImage[2].style.background = "white"
+  //
+  //
+  //     img[0].style.transitionProperty = "all";
+  //     img[1].style.transitionProperty = "all";
+  //     img[0].style.transform = "translateX(-100%)"
+  //     img[1].style.transform = "translateX(0%)"
+  //     img[2].style.transitionProperty = "none";
+  //     // img[2].style.transitionProperty = "all";
+  //     img[2].style.transform = "translateX(100%)";
+  //     whichImage[1].style.background = "black";
+  //   }
+  //
+  // }, 2000);
+
+
+</script>
 </body>
 </html>
