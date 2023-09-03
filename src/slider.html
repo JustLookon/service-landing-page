@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="./styles/output.css" rel="stylesheet" />
+    <title>SLIDER</title>
+</head>
+<style>
+    *{
+        margin: 0;
+        padding: 0;
+    }
+
+
+    
+
+</style>
+<body>
+
+    <div class="slider relative flex w-screen h-screen overflow-hidden">
+
+        <img src="./assets/istockphoto-1357410492-1024x1024.jpg" alt="" class="absolute w-full h-full object-cover  transition-all" style="transform: translateX(-100%);">
+        <img src="./assets/sunrise_image.jpg" alt="" class="absolute w-full h-full object-cover transition-all" style="transform: translateX(0%);">
+        <img src="./assets/pxfuel.webp" alt="" class="absolute w-full h-full object-cover  transition-all" style="transform: translateX(100%);">
+
+        <!-- <button class="previous absolute left-4 top-2/4 p-5 rounded-full bg-white " aria-label="name"><</button>
+        <button aria-disabled="" class="next absolute right-4 top-2/4 p-5 rounded-full bg-white " aria-label="name">></button> -->
+
+        <div class="whichImage absolute bottom-5 left-[40%] bg-white w-4 h-4 rounded-full"></div>
+        <div class="whichImage absolute bottom-5 left-[50%] bg-white w-4 h-4 rounded-full"></div>
+        <div class="whichImage absolute bottom-5 left-[60%] bg-white w-4 h-4 rounded-full"></div>
+    </div>
+
+    <script>
+let img = document.getElementsByTagName("img");
+        let previous = document.getElementsByTagName("button")[0];
+        let next = document.getElementsByTagName("button")[1];
+        
+        let whichImage = document.getElementsByClassName("whichImage");
+        
+        // setInterval(() => {
+        //   if(img[0].style.transform==="translateX(-100%)"  &&  img[1].style.transform === "translateX(0%)" &&  img[2].style.transform === "translateX(100%)")
+        //     {img[0].style.transform = "translateX(-200%)"
+        //     img[1].style.transform = "translateX(-100%)"
+        //     img[2].style.transform = "translateX(0%)"}
+            
+        //     else if(img[0].style.transform==="translateX(-200%)"  &&  img[1].style.transform === "translateX(-100%)" &&  img[2].style.transform === "translateX(0%)")
+        //     {img[0].style.transform = "translateX(0%)"
+        //     img[1].style.transform = "translateX(100%)"
+        //     img[2].style.transform = "translateX(200%)"}
+            
+            
+        //     else if(img[0].style.transform==="translateX(0%)"  &&  img[1].style.transform === "translateX(100%)" &&  img[2].style.transform === "translateX(200%)")
+        //     {img[0].style.transform = "translateX(-100%)"
+        //     img[1].style.transform = "translateX(0%)"
+        //     img[2].style.transform = "translateX(100%)"}
+        // }, 4000);
+
+        
+        
+        
+        // BUTTON SLIDER
+        
+        // next.addEventListener("click", ()=>{
+        //     if(img[0].style.transform==="translateX(-100%)"  &&  img[1].style.transform === "translateX(0%)" &&  img[2].style.transform === "translateX(100%)")
+        //     {img[0].style.transform = "translateX(-200%)"
+        //     img[1].style.transform = "translateX(-100%)"
+        //     img[2].style.transform = "translateX(0%)"}
+            
+        //     else if(img[0].style.transform==="translateX(-200%)"  &&  img[1].style.transform === "translateX(-100%)" &&  img[2].style.transform === "translateX(0)")
+        //     {return}
+            
+        //     else if(img[0].style.transform==="translateX(0%)"  &&  img[1].style.transform === "translateX(100%)" &&  img[2].style.transform === "translateX(200%)")
+        //     {img[0].style.transform = "translateX(-100%)"
+        //     img[1].style.transform = "translateX(0%)"
+        //     img[2].style.transform = "translateX(100%)"}
+            
+            
+        // })
+        // previous.addEventListener("click", ()=>{
+        //     if(img[0].style.transform==="translateX(-100%)"  &&  img[1].style.transform === "translateX(0%)" &&  img[2].style.transform === "translateX(100%)")
+        //     {img[0].style.transform = "translateX(0%)"
+        //     img[1].style.transform = "translateX(100%)"
+        //     img[2].style.transform = "translateX(200%)"}
+
+        //     else if(img[0].style.transform==="translateX(0%)"  &&  img[1].style.transform === "translateX(100%)" &&  img[2].style.transform === "translateX(200%)")
+        //     {return}
+
+        //     if(img[0].style.transform==="translateX(-200%)"  &&  img[1].style.transform === "translateX(-100%)" &&  img[2].style.transform === "translateX(0%)")
+        //     {img[0].style.transform = "translateX(-100%)"
+        //     img[1].style.transform = "translateX(0%)"
+        //     img[2].style.transform = "translateX(100%)"}
+
+        // })
+
+        // AUTOMATIC SLIDER
+
+        setInterval(() => {
+          
+          if(img[0].style.transform==="translateX(-100%)"  &&  img[1].style.transform === "translateX(0%)" &&  img[2].style.transform === "translateX(100%)"){
+            whichImage[0].style.background= "white"
+            whichImage[1].style.background= "white"
+
+
+            img[1].style.transitionProperty = "all";
+            img[2].style.transitionProperty = "all";
+            img[0].style.transitionProperty = "none";
+            img[0].style.transform = "translateX(100%)"
+            // img[0].style.transitionProperty = "all";
+            img[1].style.transform = "translateX(-100%)"
+            img[2].style.transform = "translateX(0%)"
+            
+            whichImage[2].style.background= "black";
+        }
+          
+          else if(img[0].style.transform==="translateX(100%)"  &&  img[1].style.transform === "translateX(-100%)" &&  img[2].style.transform === "translateX(0%)"){
+            whichImage[1].style.background= "white"
+            whichImage[2].style.background= "white"
+
+
+            img[0].style.transitionProperty = "all";
+            img[2].style.transitionProperty = "all";
+          img[0].style.transform = "translateX(0%)";
+            img[1].style.transitionProperty = "none";
+          img[1].style.transform = "translateX(100%)";
+            // img[1].style.transitionProperty = "all";
+            img[2].style.transform = "translateX(-100%)"
+            whichImage[0].style.background= "black";
+        }
+          
+          else if(img[0].style.transform==="translateX(0%)"  &&  img[1].style.transform === "translateX(100%)" &&  img[2].style.transform === "translateX(-100%)"){
+            whichImage[0].style.background= "white"
+            whichImage[2].style.background= "white"
+
+
+            img[0].style.transitionProperty = "all";
+            img[1].style.transitionProperty = "all";
+          img[0].style.transform = "translateX(-100%)"
+          img[1].style.transform = "translateX(0%)"
+        img[2].style.transitionProperty = "none";
+        // img[2].style.transitionProperty = "all";
+        img[2].style.transform = "translateX(100%)";
+        whichImage[1].style.background= "black";
+    }
+     
+        }, 2000);
+
+        
+    </script>
+</body>
+</html>

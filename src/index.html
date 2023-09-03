@@ -5,7 +5,8 @@
   <meta charset="UTF-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Grow Your Profits Working 1 Hr A Day In Business “If Work Is Life, Then Make It Beautiful” ">
+  <meta name="description"
+    content="Grow Your Profits Working 1 Hr A Day In Business “If Work Is Life, Then Make It Beautiful” ">
 
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -26,14 +27,14 @@
 
 <body class="m-0 p-0">
   <header
-    class="h-[10vh] w-full fixed top-0 text-center text-xl md:text-2xl font-bold flex justify-center items-center bg-orange-100">
-    <h2>Prateek Agarwal</h2>
+    class="h-[10vh] w-full fixed top-0 text-center text-xl md:text-2xl font-bold flex justify-center items-center bg-orange-100 z-50">
+    <h2> Dr Prateek Agarwal</h2>
   </header>
   <main>
 
     <!-- FIRST SECTION -->
 
-    <section class="firstSection text-white z-10">
+    <section class="firstSection text-white z-10 relative">
       <div class="bg-image md:py-48 px-6 flex flex-col justify-center">
         <div class="text-center font-noto">
           <div class="text-xl sm:text-3xl md:text-3xl md:pb-6">
@@ -58,7 +59,7 @@
     <!-- SECOND SECTION  -->
 
 
-    <section class="secondSection section-mar-pad">
+    <section class="secondSection section-mar-pad z-10 bg-white relative">
       <div class="flex flex-col items-center">
         <div class="text-center app-header">
           <h2 class="gradientText">
@@ -401,6 +402,8 @@
             </div>
 
           </div>
+        </div>
+      </div>
 
 
 
@@ -413,8 +416,8 @@
       <div class="mt-[9rem]">
         <h4 class="gradientText app-header">About the Trainer</h4>
       </div>
-      <div class="flex flex-col justify-center items-center px-8 mx-auto pt-8 md:flex-row">
-        <div class="max-w-3xl pt-7">
+      <div class="flex flex-col justify-center items-center px-8  mx-auto  md:flex-row"> <!--pt-8-->
+        <!-- <div class="max-w-3xl pt-7">
 
           <div class="flex flex-col justify-center items-center md:flex-row ">
             <div
@@ -428,8 +431,7 @@
               </p>
             </div>
             <div class="flex-shrink-0">
-              <img class="md:mb-6" width="200rem" style=" aspect-ratio: 1;"
-                src="./assets/prateek_agarwal.webp"
+              <img class="md:mb-6" width="200rem" style=" aspect-ratio: 1;" src="./assets/prateek_agarwal.webp"
                 alt="businessman image" />
             </div>
           </div>
@@ -532,36 +534,56 @@
               Yes, Lets do it
             </button>
           </div>
+        </div> -->
+        <div class="aboutTrainer md:leading-7 md:text-xl mb-8 max-w-2xl md:px-10">
+          <h2 class="text-2xl">Dr. PK</h2>
+          <br>
+          <p>Business Coach | Public Speaker</p>
+          <br>
+          <div class="summary">
+            I Help Business Owners Grow To Large Company.
+            <br> <br>
+            Completed his PhD in "Business Management & Strategy" and was awarded an Honorary
+            Doctorate from Sorbon University, France.
+            <br> <br>
+            Featured in Entrepreneur, APN-News, Hello Post, Indian Retailers, Silicon IndiaStartup,
+            SME Futures, Startups and other reputed publications.
+            <br> <br>
+            Has delivered over 100+ workshops and 35 talks in companies, colleges as well as online
+            events.
+            <br> <br>
+            Helping business owners to Grow To A Large Company.
+          </div>
+
         </div>
 
+        <div class="trainerImage ">
+          <img src="" class=" aspect-auto" alt="Trainer Image">
+        </div>
       </div>
       </div>
     </section>
 
     <!-- SIXTH SECTION  -->
 
-    <!-- <section class="sixthSection sec-mar-pad">
+    <section class="sixthSection section-mar-pad">
       <h2 class="gradientText app-header mt-20 mx-9">Course Fees Structure</h2>
-      
-      <div class="sixthSectionContent">
-        <div class="list-grid">
-          <ol class="listOl">
-            <li>Duration: 6 months online module
-            </li>
-            <li>Classes : 2 per month, if lagging behind than max.3 as per decision of trainer</li>
-            <li>Personal Coaching, customized according to individual requirements as per trainer</li>
-          </ol>
-          <ol class="listOl">
-            <li> No breaks or extension allowed, has to be strictly finished within defined timeline
-            </li>
-            <li>Fees : USD 20000, to be paid 100% advance against invoice</li>
-            <li>No refund applicable after 1st month</li>
-          </ol>
-        </div>
-        
-      </div>
 
-    </section> -->
+      <div class="sixthSectionContent">
+
+        <ol class="listOl w-20rem md:w-[44rem] lg:w-[52rem] mx-auto">
+          <li>Duration: 6 months online module</li>
+          <li>Classes : 2 per month, if lagging behind than max.3 as per decision of trainer</li>
+          <li>Personal Coaching, customized according to individual requirements as per trainer</li>
+          <li> No breaks or extension allowed, has to be strictly finished within defined timeline</li>
+          <li>Fees : USD 20000, to be paid 100% advance against invoice</li>
+          <li>No refund applicable after 1st month</li>
+        </ol>
+
+
+      </div>
+    </section>
+
     <!-- <section class="fourthSection mt-16">
           <div class=" flex flex-col items-center">
               <h3 class="uppercase text-3xl font-bold text-center">what you will get in the program</h3>
@@ -626,11 +648,12 @@
 
   <!-- UP ARROW  -->
 
-  <!-- <section class="md:up-arrow z-0 ">
-    <a href="#" class="fixed bottom-28 right-2 lg:right-7 rounded-full p-2 hover:bg-red-300">
-      <i class="fa-solid fa-angle-up  text-3xl md:text-4xl"></i>
+  <section class="md:up-arrow z-0 ">
+    <a href="#top"
+      class="fixed bottom-40 right-2 lg:right-9 rounded-3xl  p-2 hover:bg-blue-500 hover:text-white transi tion-all opacity-50">
+      <i class="fa-solid fa-angle-up text-3xl md:text-4xl "></i>
     </a>
-  </section> -->
+  </section>
 
   <footer class="bg-gray-50 rounded-lg shadow dark:bg-gray-800 mb-4">
     <div class="w-full mx-auto max-w-screen-xl p-4 md:flex md:items-center md:justify-between">
@@ -647,7 +670,8 @@
         </div>
         <div
           class=" facebook w-28 bg-gradient-to-r from-pink-700 via-purple-700 to-indigo-700 ... text-white  p-1 px-1 pl-2 rounded-md my-3 md:mx-3 cursor-pointer">
-          <a href="https://www.instagram.com/prateekagarwal_businesscoach/?next=https%3A%2F%2Fwww.instagram.com%2Fp%2FCGW619xi9W8%2Fc%2F17859118451282690%2F%3F__coig_login%3D1" target="_blank" class="">
+          <a href="https://www.instagram.com/prateekagarwal_businesscoach/?next=https%3A%2F%2Fwww.instagram.com%2Fp%2FCGW619xi9W8%2Fc%2F17859118451282690%2F%3F__coig_login%3D1"
+            target="_blank" class="">
             <i class="fa-brands fa-instagram"></i>
             <span>Instagram</span>
           </a>
