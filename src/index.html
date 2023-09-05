@@ -5,7 +5,8 @@
   <meta charset="UTF-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Grow Your Profits Working 1 Hr A Day In Business “If Work Is Life, Then Make It Beautiful” ">
+  <meta name="description"
+    content="Grow Your Profits Working 1 Hr A Day In Business “If Work Is Life, Then Make It Beautiful” ">
 
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -26,16 +27,50 @@
 
 <body class="m-0 p-0">
   <header
-    class="h-[10vh] w-full fixed top-0 text-center text-xl md:text-2xl font-bold flex justify-center items-center bg-orange-100">
-    <h2>Prateek Agarwal</h2>
+    class=" h-[10vh] w-full fixed top-0 text-center text-xl md:text-2xl font-bold flex justify-center items-center bg-orange-100 z-50">
+    <h2>Dr Prateek Agarwal</h2>
   </header>
   <main>
 
     <!-- FIRST SECTION -->
 
-    <section class="firstSection text-white z-10">
-      <div class="bg-image md:py-48 px-6 flex flex-col justify-center">
-        <div class="text-center font-noto">
+    <section class="firstSection text-white z-10 relative mt-20 ">
+
+      <div class=" slider relative flex w-screen h-screen overflow-hidden  justify-center items-center">
+
+        <img alt="" data-role="image-slider-item"
+          class="absolute w-full h-full object-cover  transition-all ease-out duration-1000" data-current-position="0"
+          src="./assets/bg-image.webp" style="transform: translateX(0);">
+        <img alt="" data-role="image-slider-item"
+          class="absolute w-full h-full object-cover transition-all ease-out duration-1000" src="./assets/bg-2.webp"
+          data-current-position="1" style="transform: translateX(100%);">
+        <img alt="" data-role="image-slider-item"
+          class="absolute w-full h-full object-cover  transition-all ease-out duration-1000" src="./assets/pxfuel.webp"
+          data-current-position="2" style="transform: translateX(200%);">
+        <img alt="" data-role="image-slider-item"
+          class="absolute w-full h-full object-cover  transition-all ease-out duration-1000"
+          src="./assets/sunrise_image.jpg" data-current-position="3" style="transform: translateX(300%);">
+        <img alt="" data-role="image-slider-item"
+          class="absolute w-full h-full object-cover  transition-all ease-out duration-1000"
+          src="./assets/istockphoto-1357410492-1024x1024.jpg" data-current-position="-1"
+          style="transform: translateX(-100%);">
+
+
+        <button class="previous absolute  lg:left-2 top-2/4 p-3 rounded-full hidden lg:block hover:bg-blue-200 "
+          aria-label="name">
+          <span> &#11164;</span>
+        </button>
+        <button aria-disabled=""
+          class="next absolute  lg:right-2 top-2/4 p-3 rounded-full hidden lg:block hover:bg-blue-200 "
+          aria-label="name">
+          <span> &#11166;</span>
+        </button>
+
+        <!-- <div class="whichImage absolute bottom-5 left-[40%] bg-white w-4 h-4 rounded-full"></div>
+          <div class="whichImage absolute bottom-5 left-[50%] bg-white w-4 h-4 rounded-full"></div>
+          <div class="whichImage absolute bottom-5 left-[60%] bg-white w-4 h-4 rounded-full"></div> -->
+
+        <div class="text-center font-noto px-3 z-20">
           <div class="text-xl sm:text-3xl md:text-3xl md:pb-6">
             <h2>BUSINESS AUTOPILOT MASTERY PROGRAM</h2>
           </div>
@@ -46,19 +81,21 @@
             Common Problems with Solution
           </div>
           <!-- <div class="text-xl md:text-2xl p-2">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi.
-          </div> -->
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi.
+            </div> -->
           <button class="py-4 px-8  my-4 rounded-md bg-red-600 text-2xl sm:px-20 md:text-4xl font-semibold">
             Yes, I want to grow
           </button>
         </div>
       </div>
+
+
     </section>
 
     <!-- SECOND SECTION  -->
 
 
-    <section class="secondSection section-mar-pad">
+    <section class="secondSection section-mar-pad pt-20 mt-0 z-10 bg-white relative">
       <div class="flex flex-col items-center">
         <div class="text-center app-header">
           <h2 class="gradientText">
@@ -162,7 +199,10 @@
           month.</p>
         <h4 class="subHeading">PROGRAM DETAILS</h4>
       </div>
-      <div class=" bg-[url('../assets/bg-2.webp')] bg-cover bg-no-repeat py-8 ">
+      <div class="py-8" style="background-color: #3EECAC;
+      background-image: linear-gradient(19deg, #3EECAC 0%, #EE74E1 100%);
+         
+        ">
         <div class="show p-[1rem] [&>*]:mb-5  max-w-7xl mx-auto">
           <div class="monthHeading flex flex-col items-center">
             <div class="month text-white text-center text-2xl font-bold">Month 1
@@ -413,8 +453,8 @@
       <div class="mt-[9rem]">
         <h4 class="gradientText app-header">About the Trainer</h4>
       </div>
-      <div class="flex flex-col justify-center items-center px-8 mx-auto pt-8 md:flex-row">
-        <div class="max-w-3xl pt-7">
+      <div class="flex flex-col justify-center items-center px-8  mx-auto  md:flex-row"> <!--pt-8-->
+        <!-- <div class="max-w-3xl pt-7">
 
           <div class="flex flex-col justify-center items-center md:flex-row ">
             <div
@@ -428,8 +468,7 @@
               </p>
             </div>
             <div class="flex-shrink-0">
-              <img class="md:mb-6" width="200rem" style=" aspect-ratio: 1;"
-                src="./assets/prateek_agarwal.webp"
+              <img class="md:mb-6" width="200rem" style=" aspect-ratio: 1;" src="./assets/prateek_agarwal.webp"
                 alt="businessman image" />
             </div>
           </div>
@@ -532,49 +571,83 @@
               Yes, Lets do it
             </button>
           </div>
+        </div> -->
+
+
+        <div class="aboutTrainer md:leading-7 lg:text-xl mb-8 max-w-2xl md:px-10">
+          <h2 class="text-2xl">Dr. PK</h2>
+          <br>
+          <p>Business Coach | Public Speaker</p>
+          <br>
+          <div class="summary">
+            I Help Business Owners Grow To Large Company.
+            <br> <br>
+            Completed his PhD in "Business Management & Strategy" and was awarded an Honorary
+            Doctorate from Sorbon University, France.
+            <br> <br>
+            Featured in Entrepreneur, APN-News, Hello Post, Indian Retailers, Silicon IndiaStartup,
+            SME Futures, Startups and other reputed publications.
+            <br> <br>
+            Has delivered over 100+ workshops and 35 talks in companies, colleges as well as online
+            events.
+            <br> <br>
+            Helping business owners to Grow To A Large Company.
+          </div>
+
         </div>
 
-      </div>
+        <div class="trainerImage ">
+          <img src="" class=" aspect-auto" alt="Trainer Image">
+        </div>
       </div>
     </section>
 
     <!-- SIXTH SECTION  -->
 
-    <!-- <section class="sixthSection sec-mar-pad">
+
+    <section class="sixthSection sec-mar-pad">
       <h2 class="gradientText app-header mt-20 mx-9">Course Fees Structure</h2>
-      
-      <div class="sixthSectionContent">
-        <div class="list-grid">
-          <ol class="listOl">
+
+      <div class="sixthSectionContent ">
+        <div class=" flex flex-col items-center ">
+          <ol class="listOl  md:w-[44rem] px-8 w-[22rem] lg:w-[50rem] md:mx-auto ">
             <li>Duration: 6 months online module
             </li>
             <li>Classes : 2 per month, if lagging behind than max.3 as per decision of trainer</li>
             <li>Personal Coaching, customized according to individual requirements as per trainer</li>
-          </ol>
-          <ol class="listOl">
             <li> No breaks or extension allowed, has to be strictly finished within defined timeline
             </li>
             <li>Fees : USD 20000, to be paid 100% advance against invoice</li>
             <li>No refund applicable after 1st month</li>
           </ol>
-        </div>
-        
-      </div>
+          <div class="px-8 lg:text-xl list-none leading-6 lg:leading-relaxed pt-0 w-[23rem] md:w-[44rem] lg:w-[50rem] lg:mx-auto ">
+            For,
+            <br>
+            Growth Consultancy Services,
+            <br>
+            Shams Business Center,
+            <br>
+            Sharjah Media City Free Zone,
+            <br>
+            Sharjah, U.A.E.
+            <br>
+            Ms. Emily
+            <br>
+            <span class="opacity-90">Cell: </span><a href="tel:+971585829545" class="italic text-blue-600 ml-12 hover:underline">+971-585829545</a>
+            <br>
+            <span class="opacity-90 mb-2rem">Email:</span> <a href="https://wa.me/971585829545" class="italic text-blue-600 break-words w-3/5 inline-block hover:underline ml-10">support@growthconsultancyservice.com </a> 
+            <br>
+          </div>
 
-    </section> -->
-    <!-- <section class="fourthSection mt-16">
-          <div class=" flex flex-col items-center">
-              <h3 class="uppercase text-3xl font-bold text-center">what you will get in the program</h3>
-              <div class="line bg-black mt-2 w-80 "></div>
-            </div>
-            <div class="bg-sky-300">
-                <span></span>
-            </div>
-        </section> -->
+        </div>
+      </div>
+    </section>
+        
+        <!-- <div class="mapouter"><div class="gmap_canvas"><iframe class="gmap_iframe" width="100%" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?width=600&amp;height=400&amp;hl=en&amp;q=Sai International Public School&amp;t=&amp;z=16&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"></iframe><a href="https://gachanox.io/">Gacha Nox</a></div><style>.mapouter{position:relative;text-align:right;width:100%;height:400px;}.gmap_canvas {overflow:hidden;background:none!important;width:100%;height:400px;}.gmap_iframe {height:400px!important;}</style></div> -->
+
     <section class="lastSection  min-h-[50vh] mb-32 md:my-32 md:mx-2">
       <div class="flex flex-col-reverse md:flex-row justify-center items-center md:pt-9">
         <div class="map w-[90vw] md:mb-0 h-[50vh] md:mr-14 md:h-[40vh] md:w-[40vw] md:max-w-4xl">
-          <!-- <div class="mapouter"><div class="gmap_canvas"><iframe class="gmap_iframe" width="100%" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?width=600&amp;height=400&amp;hl=en&amp;q=Sai International Public School&amp;t=&amp;z=16&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"></iframe><a href="https://gachanox.io/">Gacha Nox</a></div><style>.mapouter{position:relative;text-align:right;width:100%;height:400px;}.gmap_canvas {overflow:hidden;background:none!important;width:100%;height:400px;}.gmap_iframe {height:400px!important;}</style></div> -->
           <iframe class="w-full h-full" title="google-map"
             src="https://maps.google.com/maps?width=600&amp;height=400&amp;hl=en&amp;q=28.740235,77.254181&amp;t=&amp;z=16&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"
             frameborder="0"></iframe>
@@ -594,7 +667,7 @@
             </p>
             <p>
               <span class="opacity-80">WhatsApp : </span><a href="https://wa.me/971585829545"> <i
-                  class="text-blue-600 underline-offset-2 ml-5 hover:underline">+971 58 582 9545</i></a>
+                  class="text-blue-600 underline-offset-2 ml-4 md:ml-3 hover:underline">+971 58 582 9545</i></a>
             </p>
           </div>
         </div>
@@ -626,9 +699,10 @@
 
   <!-- UP ARROW  -->
 
-  <!-- <section class="md:up-arrow z-0 ">
-    <a href="#" class="fixed bottom-28 right-2 lg:right-7 rounded-full p-2 hover:bg-red-300">
-      <i class="fa-solid fa-angle-up  text-3xl md:text-4xl"></i>
+  <!-- <section class="md:up-arrow z-0 transition-all duration-700 ease-out">
+    <a href="#top"
+      class="fixed bottom-40 right-2 lg:right-9 rounded-3xl  p-2 hover:bg-blue-500 hover:text-white transition-all duration-700 ease-out opacity-50">
+      <i class="fa-solid fa-angle-up text-3xl md:text-4xl transition-all duration-700 ease-out"></i>
     </a>
   </section> -->
 
@@ -647,7 +721,8 @@
         </div>
         <div
           class=" facebook w-28 bg-gradient-to-r from-pink-700 via-purple-700 to-indigo-700 ... text-white  p-1 px-1 pl-2 rounded-md my-3 md:mx-3 cursor-pointer">
-          <a href="https://www.instagram.com/prateekagarwal_businesscoach/?next=https%3A%2F%2Fwww.instagram.com%2Fp%2FCGW619xi9W8%2Fc%2F17859118451282690%2F%3F__coig_login%3D1" target="_blank" class="">
+          <a href="https://www.instagram.com/prateekagarwal_businesscoach/?next=https%3A%2F%2Fwww.instagram.com%2Fp%2FCGW619xi9W8%2Fc%2F17859118451282690%2F%3F__coig_login%3D1"
+            target="_blank" class="">
             <i class="fa-brands fa-instagram"></i>
             <span>Instagram</span>
           </a>
