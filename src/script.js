@@ -166,6 +166,12 @@ slider.startInterval();
 next.addEventListener('click', slider.move(false, true));
 previous.addEventListener('click', slider.move(true, true));
 
+  // UPARROW
+  let scrollUp = document.getElementById("scrollUp");
+  
+  scrollUp.style.display = "block";
+
+
 
     // let header = document.getElementsByTagName("header")[0]
 
