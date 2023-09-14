@@ -74,7 +74,7 @@ class Slider {
       // When we are on the last, we should push the first image in the next position
       // We are checking if we are at the last image or not just by checking that if we have the next image in place.
       // And we can check if the next image in place by, checking the "data-current-position" attribute if we have any image that has the value 1 then it means the next image is waiting in its place.
-      const nextImage = document.querySelector(`img[data-role="image-slider-item"][data-current-position="1"]`)
+      const nextImage = document.querySelector(`img[data-role="image-slider-item"][data-current-position="1"]`);
       const isOnLast = !nextImage;
       // We have two condition - isOnLast(self explanatory) && !isPrev
       // !isPrev - We are gonna fall into this block only if this method is triggered by next button
