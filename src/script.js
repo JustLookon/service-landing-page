@@ -88,7 +88,7 @@ class Slider {
         const firstImageInTheBuffer = document.querySelector(`img[data-role="image-slider-item"][data-current-position="-${this.sliderImages.length - 1}"]`);
         // We are positioning the first image to the next image's position i.e, data-current-position=1 and transform=translateX(100%), so that we can have smooth transition.
         firstImageInTheBuffer.dataset.currentPosition = '1';
-        firstImageInTheBuffer.style.transitionProperty = 'none';
+        firstImageInTheBuffer.style.transitionProperty = 'none';  
         firstImageInTheBuffer.style.transform = `translateX(100%)`
       }
 
@@ -167,9 +167,9 @@ next.addEventListener('click', slider.move(false, true));
 previous.addEventListener('click', slider.move(true, true));
 
   // UPARROW
-  let scrollUp = document.getElementById("scrollUp");
+  // let scrollUp = document.getElementById("scrollUp");
   
-  scrollUp.style.display = "block";
+  // scrollUp.style.display = "block";
 
 
 

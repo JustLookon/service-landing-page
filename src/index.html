@@ -27,7 +27,7 @@
 
 <body class="m-0 p-0">
   <header
-    class=" h-[10vh] w-full fixed top-0 text-center text-xl md:text-2xl font-bold flex justify-center items-center bg-orange-100 z-50">
+    class=" h-[10vh] w-full fixed top-0 text-center text-xl md:text-2xl font-bold flex justify-center items-center bg-orange-100 z-50 ">
     <h2>Dr Prateek Agarwal</h2>
   </header>
   <main>
@@ -36,16 +36,16 @@
 
     <section class="firstSection text-white z-10 relative mt-[8vh] ">
 
-      <div class=" slider relative flex w-screen h-screen overflow-hidden  justify-center items-center">
+      <div class=" slider relative flex w-[100%] h-screen overflow-hidden  justify-center items-center">
 
-        <img alt="" data-role="image-slider-item "
-          class="absolute w-full h-full object-cover  transition-all  duration-1000 aspect-auto" data-current-position="0" 
-          src="./assets/early_morning_1.webp" style="transform: translateX(0%);">
         <img alt="" data-role="image-slider-item"
-          class="absolute w-full h-full object-cover transition-all  duration-1000 aspect-auto" src="./assets/dark_blue.webp" 
+          class="absolute w-full h-full object-cover  transition-all  duration-1000 aspect-auto" data-current-position="0" 
+          src="./assets/early_morning_1.webp" style="transform: translateX(0);">
+        <img alt="" data-role="image-slider-item"
+          class="absolute w-full h-full object-cover transition-all  duration-1000 aspect-auto" src="./assets/bg-image.webp" 
           data-current-position="1" style="transform: translateX(100%);">
 
-        <img alt="" data-role="image-slider-item "
+        <img alt="" data-role="image-slider-item"
           class="absolute w-full h-full object-cover  transition-all  duration-1000 aspect-auto" 
           src="./assets/wood_3d.webp" data-current-position="-1"
           style="transform: translateX(-100%);">
@@ -194,8 +194,16 @@
           month.</p>
         <h4 class="subHeading">PROGRAM DETAILS</h4>
       </div>
-      <div class="py-8" style="background-color: #3EECAC;
-      background-image: linear-gradient(19deg, #3EECAC 0%, #EE74E1 100%);
+      <div class="py-8" style="background: hsla(240, 79%, 45%, 1);
+
+      background: radial-gradient(circle, hsla(240, 79%, 45%, 1) 0%, hsla(271, 85%, 48%, 1) 85%);
+      
+      background: -moz-radial-gradient(circle, hsla(240, 79%, 45%, 1) 0%, hsla(271, 85%, 48%, 1) 85%);
+      
+      background: -webkit-radial-gradient(circle, hsla(240, 79%, 45%, 1) 0%, hsla(271, 85%, 48%, 1) 85%);
+      
+      filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#1818D0", endColorstr="#7E12E3", GradientType=1 );
+      
          
         ">
         <div class="show p-[1rem] [&>*]:mb-5  max-w-7xl mx-auto">
@@ -391,7 +399,7 @@
           </div>
 
 
-          <div class=" rounded-md bg-white max-w-4xl mx-auto">
+          <div class="rounded-md bg-white max-w-4xl mx-auto">
             <a href="#" class="showBar showHidden  max-w-4xl">
 
               <div class="listHeading">
@@ -449,7 +457,7 @@
         <h4 class="gradientText app-header">About the Trainer</h4>
       </div>
       <div class="flex flex-col justify-center items-center px-8  mx-auto  md:flex-row"> <!--pt-8-->
-        <!-- <div class="max-w-3xl pt-7">
+        <div class="max-w-3xl pt-7">
 
           <div class="flex flex-col justify-center items-center md:flex-row ">
             <div
@@ -566,10 +574,10 @@
               Yes, Lets do it
             </button>
           </div>
-        </div> -->
+        </div>
 
 
-        <div class="aboutTrainer md:leading-7 lg:text-xl mb-8 max-w-2xl md:px-10">
+        <!-- <div class="aboutTrainer md:leading-7 lg:text-xl mb-8 max-w-2xl md:px-10">
           <h2 class="text-2xl">Dr. PK</h2>
           <br>
           <p>Business Coach | Public Speaker</p>
@@ -591,9 +599,9 @@
 
         </div>
 
-        <div class="trainerImage ">
-          <img src="" class=" aspect-auto" alt="Trainer Image">
-        </div>
+        <div class="trainerImage">
+          <img src="" class="aspect-auto" alt="Trainer Image">
+        </div> -->
       </div>
     </section>
 
@@ -603,9 +611,9 @@
     <section class="sixthSection sec-mar-pad">
       <h2 class="gradientText app-header mt-20 mx-9">Course Fees Structure</h2>
 
-      <div class="sixthSectionContent ">
-        <div class=" flex flex-col items-center ">
-          <ol class="listOl  md:w-[44rem] px-8 w-[86vw] lg:w-[50rem] md:mx-auto ">
+      <div class="sixthSectionContent">
+        <div class=" flex flex-col items-center">
+          <ol class="listOl  md:w-[44rem] px-8 w-[86vw] lg:w-[50rem] md:mx-auto">
             <li>Duration: 6 months online module
             </li>
             <li>Classes : 2 per month, if lagging behind than max.3 as per decision of trainer</li>
@@ -615,7 +623,7 @@
             <li>Fees : USD 20000, to be paid 100% advance against invoice</li>
             <li>No refund applicable after 1st month</li>
           </ol>
-          <div class="px-8 lg:text-xl list-none leading-6 lg:leading-relaxed pt-0 w-[86vw] md:w-[44rem] lg:w-[50rem] lg:mx-auto ">
+          <div class="px-8 lg:text-xl list-none leading-6 lg:leading-relaxed pt-0 w-[86vw] md:w-[44rem] lg:w-[50rem] lg:mx-auto">
             For,
             <br>
             Growth Consultancy Services,
@@ -644,10 +652,10 @@
         <!-- <div class="mapouter"><div class="gmap_canvas"><iframe class="gmap_iframe" width="100%" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?width=600&amp;height=400&amp;hl=en&amp;q=Sai International Public School&amp;t=&amp;z=16&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"></iframe><a href="https://gachanox.io/">Gacha Nox</a></div><style>.mapouter{position:relative;text-align:right;width:100%;height:400px;}.gmap_canvas {overflow:hidden;background:none!important;width:100%;height:400px;}.gmap_iframe {height:400px!important;}</style></div> -->
 
     <section class="lastSection  min-h-[50vh] mb-32 md:my-32 md:mx-2">
-      <div class="flex flex-col-reverse md:flex-row justify-center  md:pt-9 ">
+      <div class="flex flex-col-reverse md:flex-row justify-center items-center md:pt-9 ">
         <div class="map w-[90vw] md:mb-0 h-[50vh] md:mr-14 md:h-[40vh] md:w-[40vw] md:max-w-xl">
           <iframe class="w-full h-full" title="google-map"
-            src="https://maps.google.com/maps?width=600&amp;height=400&amp;hl=en&amp;q=28.740235,77.254181&amp;t=&amp;z=16&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"
+            src="https://maps.google.com/maps?width=600&amp;height=400&amp;hl=en&amp;q=25.27762098431863, 55.68044145256946&amp;t=&amp;z=16&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"
             frameborder="0"></iframe>
         </div>
         <div class="contact flex flex-col items-center  my-20  md:py-0 md:my-0 ">
