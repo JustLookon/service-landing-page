@@ -77,7 +77,7 @@ class Slider {
       const nextImage = document.querySelector(`img[data-role="image-slider-item"][data-current-position="1"]`);
       const isOnLast = !nextImage;
       // We have two condition - isOnLast(self explanatory) && !isPrev
-      // !isPrev - We are gonna fall into this block only if this method is triggered by next button
+      // !isPrev - We are gonna fall into this block only if this method is triggered by next buttonhttps://www.growthconsultancyservice.com/
       if(isOnLast && !isPrev) {
             // console.log('isOnLast - ');
         // Selecting the first image by a logic explained below
@@ -191,3 +191,9 @@ previous.addEventListener('click', slider.move(true, true));
     // showBar.style.color="red"
 
 // }) 
+
+// FOR UP-ARROW
+// let scrollUp = document.getElementById("scrollUp");
+// if(window.scrollTo(0,1000)){
+//   scrollUp.style.display = "block"
+// }
