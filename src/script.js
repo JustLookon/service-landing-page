@@ -1,6 +1,7 @@
 let showHidden = document.getElementsByClassName("showHidden");
 let unHide = document.getElementsByClassName("unHide");
 let toggle = document.getElementsByClassName("toggle")
+
 for (let i = 0; i < showHidden.length; i++) {
   const maxHeightVal = "1200px"
 

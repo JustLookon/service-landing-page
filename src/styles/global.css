@@ -2,21 +2,46 @@
 @tailwind components;
 @tailwind utilities;
 
+@font-face {
+  font-family: Inter;
+  src: url(../assets/fonts/Inter/Inter-Light.ttf);
+  font-weight: light;
+}
+
+@font-face {
+  font-family: Inter;
+  src: url(../assets/fonts/Inter/Inter-ExtraLight.ttf);
+  font-weight: 200;
+}
+
+@font-face {
+  font-family: Inter;
+  src: url(../assets/fonts/Inter/Inter-Regular.ttf);
+  font-weight: 400;
+}
+
 @layer components {
     .app-header {
-        @apply text-center font-bold text-3xl my-14 px-2 sm:text-4xl md:text-5xl
+      @apply text-center font-bold text-3xl my-14 px-2 sm:text-4xl md:text-5xl 
+    }
+    .sideHeader{
+      @apply font-inter font-extralight leading-tight text-xl text-center
     }
     .section-mar-pad{
         @apply my-6 mt-20 px-3
     }
+
+    .sideContainerPadding{
+      @apply py-36 px-[6rem]
+    }
     .subHeading{
-        @apply text-xl font-semibold font-noto text-center py-6 md:py-11 w-56 sm:w-fit mx-auto lg:text-2xl
+        @apply  text-xl font-semibold font-noto text-center py-6 md:py-11 w-56 sm:w-fit mx-auto lg:text-2xl
     }
     .listHeading{
-        @apply text-xl font-medium font-noto py-6 w-56 md:py-11  sm:w-fit md:text-2xl
+        @apply text-xl font-semibold font-noto py-6 w-56 md:py-11  sm:w-fit md:text-2xl
     }
     .showBar{
-        @apply  text-blue-500   flex items-center justify-between  font-semibold max-w-lg mx-auto border-4 hover:bg-gray-200  px-4 md:px-8
+        @apply  text-black flex items-center justify-between max-w-lg mx-auto border-4 hover:bg-gray-200  px-4 md:px-8 z-10
     }
     .list-grid-dropdown{
         @apply grid text-[17px] pb-12 px-1 md:mx-10   max-w-screen-lg  md:text-[1.3rem] md:max-w-4xl
@@ -25,11 +50,12 @@
         @apply grid text-[17px] pb-12 px-1 mx-auto justify-center max-w-screen-lg  md:text-[1.3rem] md:max-w-5xl md:grid-cols-2
     }
     .listUl{
-        @apply px-8 leading-6 md:leading-8 lg:leading-9 list-disc [&>*]:mb-3 pt-7 md:text-[1.01rem] lg:text-xl
+        @apply px-8 leading-6 md:leading-8 lg:leading-9 list-disc [&>*]:mb-3 pt-7 md:text-[1.3rem] lg:text-xl
     }
     .listOl{
-        @apply px-8 leading-6 md:leading-8 lg:leading-9 list-decimal [&>*]:mb-3 pt-7 md:text-[1.01rem] lg:text-xl
+        @apply px-8 leading-6 md:leading-8 lg:leading-9 list-decimal [&>*]:mb-3 pt-7 md:text-[1.3rem] lg:text-xl
     }
+
 }
 
 
@@ -46,12 +72,19 @@
         height: 93vh;
       }
   } */
+  .shadow{
+    --tw-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0), 0 8px 10px -6px rgba(13, 12, 12, 0.435);
+    --tw-shadow-colored: 0 20px 25px -5px var(--tw-shadow-color), 0 8px 10px -6px var(--tw-shadow-color);
+    box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+  }
 
   .line {
     min-width: 5px;
-    height: 3px;
-    max-width: 800px;
+    height: 1px;
+    max-width: 580px;
     margin-top: 1rem;
+    margin-bottom: 1rem;
+    opacity: 10%;
   }
 
   .bg-whatsapp {
@@ -63,14 +96,93 @@
 }
 
   .gradientText {
-    background: linear-gradient(to bottom left, #553c9a, #ee4b2b);
+    /* background: linear-gradient(to bottom left, #553c9a, #ee4b2b); */
     -webkit-background-clip: text;
     background-clip: text;
+    
     color: transparent;
     /* FOR TEMPRARY */
+    --tw-bg-opacity: 1;
+    background-color: rgb(63 131 248 / var(--tw-bg-opacity));
+    /* background-color: gray; */
+
+
 
   }
 
   .unHide, .toggle{
     transition: all .7s ease;
+  }
+  /* @media  screen and (min-width : 1024px)
+  {
+  .vl{
+    width: 2px;
+    background-color: black;
+    opacity: 20%;
+  }
+} */
+.vl{
+  width: 2px;
+  background-color: black;
+  opacity: 10%;
+}
+  .hl{
+    height: 2px;
+    background-color: black;
+    opacity: 10%;
+  }
+
+
+  .roadMap_button {
+    position: relative;
+    overflow: hidden;
+    animation-play-state: running;
+    animation: downAnim 1.2s infinite;
+  }
+
+  .secondSectionRightInnerContainer:hover .roadMap_button {
+    animation-play-state: paused;
+  }
+
+  .roadmap-item:nth-child(1) .roadMap_button {
+    animation-delay: 0s;
+  }
+
+  .roadmap-item:nth-child(2) .roadMap_button {
+    animation-delay: .06s;
+  }
+
+  .roadmap-item:nth-child(3) .roadMap_button {
+    animation-delay: .12s;
+  }
+
+  .roadmap-item:nth-child(4) .roadMap_button {
+    animation-delay: .18s;
+  }
+
+  .roadmap-item:nth-child(5) .roadMap_button {
+    animation-delay: .24s;
+  }
+
+  .overlay__vector {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 2;
+  }
+
+  .overlay__vector path {
+    fill: rgba(0,0,0,0.2)
+  }
+
+
+  @keyframes downAnim {
+    0%,100% {
+      transform: translateY(-5px);
+    }
+    50% {
+      transform: translateY(5px);
+    }
   }
