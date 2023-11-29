@@ -1812,6 +1812,10 @@ input:checked + .toggle-bg {
   max-width: 200px;
 }
 
+.max-w-\[20px\] {
+  max-width: 20px;
+}
+
 .max-w-\[300px\] {
   max-width: 300px;
 }
@@ -1839,6 +1843,62 @@ input:checked + .toggle-bg {
 
 .max-w-xs {
   max-width: 20rem;
+}
+
+.max-w-\[29\] {
+  max-width: 29;
+}
+
+.max-w-\[20\] {
+  max-width: 20;
+}
+
+.max-w-\[\] {
+  max-width: ;
+}
+
+.max-w-\[5rem\] {
+  max-width: 5rem;
+}
+
+.max-w-\[3rem\] {
+  max-width: 3rem;
+}
+
+.max-w-\[4rem\] {
+  max-width: 4rem;
+}
+
+.max-w-\[3\.5rem\] {
+  max-width: 3.5rem;
+}
+
+.max-w-\[3\.rem\] {
+  max-width: 3.rem;
+}
+
+.max-w-\[3\.8rem\] {
+  max-width: 3.8rem;
+}
+
+.max-w-\[3\.9rem\] {
+  max-width: 3.9rem;
+}
+
+.max-w-\[rem\] {
+  max-width: rem;
+}
+
+.max-w-\[6rem\] {
+  max-width: 6rem;
+}
+
+.max-w-\[9rem\] {
+  max-width: 9rem;
+}
+
+.max-w-\[8rem\] {
+  max-width: 8rem;
 }
 
 .flex-1 {
@@ -3153,6 +3213,10 @@ input:checked + .toggle-bg {
     width: 423px;
   }
 
+  .sm\:max-w-none {
+    max-width: none;
+  }
+
   .sm\:items-center {
     align-items: center;
   }
@@ -3639,3 +3703,5 @@ input:checked + .toggle-bg {
     margin-bottom: 0.5rem;
   }
 }
+
+  
