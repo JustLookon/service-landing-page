@@ -1681,11 +1681,6 @@ input:checked + .toggle-bg {
   min-height: 7rem;
 }
 
-.min-h-fit {
-  min-height: -moz-fit-content;
-  min-height: fit-content;
-}
-
 .w-0 {
   width: 0px;
 }
@@ -1720,10 +1715,6 @@ input:checked + .toggle-bg {
 
 .w-\[15rem\] {
   width: 15rem;
-}
-
-.w-\[200px\] {
-  width: 200px;
 }
 
 .w-\[270px\] {
@@ -1905,6 +1896,18 @@ input:checked + .toggle-bg {
 
 .resize {
   resize: both;
+}
+
+.list-inside {
+  list-style-position: inside;
+}
+
+.list-outside {
+  list-style-position: outside;
+}
+
+.list-decimal {
+  list-style-type: decimal;
 }
 
 .list-disc {
@@ -2323,11 +2326,6 @@ input:checked + .toggle-bg {
   padding-bottom: 0px;
 }
 
-.py-10 {
-  padding-top: 2.5rem;
-  padding-bottom: 2.5rem;
-}
-
 .py-12 {
   padding-top: 3rem;
   padding-bottom: 3rem;
@@ -2433,6 +2431,18 @@ input:checked + .toggle-bg {
   padding-top: 14px;
 }
 
+.pt-12 {
+  padding-top: 3rem;
+}
+
+.pt-8 {
+  padding-top: 2rem;
+}
+
+.text-left {
+  text-align: left;
+}
+
 .text-center {
   text-align: center;
 }
@@ -2469,10 +2479,6 @@ input:checked + .toggle-bg {
 
 .text-\[1\.2rem\] {
   font-size: 1.2rem;
-}
-
-.text-\[1\.4rem\] {
-  font-size: 1.4rem;
 }
 
 .text-\[1\.850rem\] {
@@ -2572,8 +2578,8 @@ input:checked + .toggle-bg {
   line-height: 1.375;
 }
 
-.tracking-tight {
-  letter-spacing: -0.025em;
+.leading-loose {
+  line-height: 2;
 }
 
 .tracking-wide {
@@ -2907,12 +2913,6 @@ input:checked + .toggle-bg {
   content: var(--tw-content);
   font-size: 1.875rem;
   line-height: 2.25rem;
-}
-
-.before\:text-2xl::before {
-  content: var(--tw-content);
-  font-size: 1.5rem;
-  line-height: 2rem;
 }
 
 .before\:text-white::before {
@@ -3275,10 +3275,6 @@ input:checked + .toggle-bg {
     height: 40vh;
   }
 
-  .md\:w-\[280px\] {
-    width: 280px;
-  }
-
   .md\:w-\[40vw\] {
     width: 40vw;
   }
@@ -3301,10 +3297,6 @@ input:checked + .toggle-bg {
 
   .md\:items-center {
     align-items: center;
-  }
-
-  .md\:justify-center {
-    justify-content: center;
   }
 
   .md\:justify-between {
@@ -3382,12 +3374,6 @@ input:checked + .toggle-bg {
     content: var(--tw-content);
     font-size: 2.25rem;
     line-height: 2.5rem;
-  }
-
-  .before\:md\:text-3xl::before {
-    content: var(--tw-content);
-    font-size: 1.875rem;
-    line-height: 2.25rem;
   }
 }
 
@@ -3527,23 +3513,21 @@ input:checked + .toggle-bg {
     padding-top: 7rem;
   }
 
-  .lg\:text-left {
-    text-align: left;
+  .lg\:pt-0 {
+    padding-top: 0px;
   }
 
-  .lg\:text-2xl {
-    font-size: 1.5rem;
-    line-height: 2rem;
+  .lg\:pb-0 {
+    padding-bottom: 0px;
+  }
+
+  .lg\:text-left {
+    text-align: left;
   }
 
   .lg\:text-3xl {
     font-size: 1.875rem;
     line-height: 2.25rem;
-  }
-
-  .lg\:text-4xl {
-    font-size: 2.25rem;
-    line-height: 2.5rem;
   }
 
   .lg\:text-5xl {
@@ -3594,10 +3578,6 @@ input:checked + .toggle-bg {
 @media (min-width: 1280px) {
   .xl\:h-\[260vh\] {
     height: 260vh;
-  }
-
-  .xl\:h-\[80\%\] {
-    height: 80%;
   }
 
   .xl\:text-base {
