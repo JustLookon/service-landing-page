@@ -1902,10 +1902,6 @@ input:checked + .toggle-bg {
   list-style-position: inside;
 }
 
-.list-outside {
-  list-style-position: outside;
-}
-
 .list-decimal {
   list-style-type: decimal;
 }
@@ -2427,16 +2423,12 @@ input:checked + .toggle-bg {
   padding-top: 1.75rem;
 }
 
-.pt-\[14px\] {
-  padding-top: 14px;
-}
-
-.pt-12 {
-  padding-top: 3rem;
-}
-
 .pt-8 {
   padding-top: 2rem;
+}
+
+.pt-\[14px\] {
+  padding-top: 14px;
 }
 
 .text-left {
@@ -2566,6 +2558,10 @@ input:checked + .toggle-bg {
   line-height: 2.25rem;
 }
 
+.leading-loose {
+  line-height: 2;
+}
+
 .leading-normal {
   line-height: 1.5;
 }
@@ -2576,10 +2572,6 @@ input:checked + .toggle-bg {
 
 .leading-snug {
   line-height: 1.375;
-}
-
-.leading-loose {
-  line-height: 2;
 }
 
 .tracking-wide {
@@ -3501,6 +3493,10 @@ input:checked + .toggle-bg {
     word-break: normal;
   }
 
+  .lg\:pt-0 {
+    padding-top: 0px;
+  }
+
   .lg\:pt-12 {
     padding-top: 3rem;
   }
@@ -3511,14 +3507,6 @@ input:checked + .toggle-bg {
 
   .lg\:pt-28 {
     padding-top: 7rem;
-  }
-
-  .lg\:pt-0 {
-    padding-top: 0px;
-  }
-
-  .lg\:pb-0 {
-    padding-bottom: 0px;
   }
 
   .lg\:text-left {
